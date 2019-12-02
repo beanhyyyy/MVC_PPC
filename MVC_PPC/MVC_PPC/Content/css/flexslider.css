@@ -120,7 +120,7 @@ html[xmlns] .flexslider .slides {
   top: 50%;
   z-index: 10;
   overflow: hidden;
-  opacity: 0;
+  opaCity_Name: 0;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.8);
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
@@ -149,22 +149,22 @@ html[xmlns] .flexslider .slides {
   text-align: right;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
-  opacity: 0.7;
+  opaCity_Name: 0.7;
   left: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev:hover {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
-  opacity: 0.7;
+  opaCity_Name: 0.7;
   right: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-next:hover {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 .flex-direction-nav .flex-disabled {
-  opacity: 0!important;
-  filter: alpha(opacity=0);
+  opaCity_Name: 0!important;
+  filter: alpha(opaCity_Name=0);
   cursor: default;
   z-index: -1;
 }
@@ -175,7 +175,7 @@ html[xmlns] .flexslider .slides {
   position: absolute;
   bottom: 5px;
   left: 10px;
-  opacity: 0.8;
+  opaCity_Name: 0.8;
   z-index: 10;
   overflow: hidden;
   cursor: pointer;
@@ -188,7 +188,7 @@ html[xmlns] .flexslider .slides {
   content: '\f004';
 }
 .flex-pauseplay a:hover {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 .flex-pauseplay a.flex-play:before {
   content: '\f003';
@@ -244,7 +244,7 @@ html[xmlns] .flexslider .slides {
   width: 100%;
   height: auto;
   display: block;
-  opacity: .7;
+  opaCity_Name: .7;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-transition: all 1s ease;
@@ -254,10 +254,10 @@ html[xmlns] .flexslider .slides {
   transition: all 1s ease;
 }
 .flex-control-thumbs img:hover {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 .flex-control-thumbs .flex-active {
-  opacity: 1;
+  opaCity_Name: 1;
   cursor: default;
 }
 /* ====================================================================================================================
@@ -265,11 +265,11 @@ html[xmlns] .flexslider .slides {
  * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
-    opacity: 1;
+    opaCity_Name: 1;
     left: 10px;
   }
   .flex-direction-nav .flex-next {
-    opacity: 1;
+    opaCity_Name: 1;
     right: 10px;
   }
 }

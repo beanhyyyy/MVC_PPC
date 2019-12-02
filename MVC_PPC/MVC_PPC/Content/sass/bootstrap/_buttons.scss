@@ -47,7 +47,7 @@
   &[disabled],
   fieldset[disabled] & {
     cursor: $cursor-disabled;
-    @include opacity(.65);
+    @include opaCity_Name(.65);
     @include box-shadow(none);
   }
 
@@ -158,7 +158,7 @@ a.btn {
   margin-top: 5px;
 }
 
-// Specificity overrides
+// SpecifiCity_Name overrides
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {

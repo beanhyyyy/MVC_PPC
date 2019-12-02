@@ -96,7 +96,7 @@
   left: 0;
   bottom: 0;
   width: $carousel-control-width;
-  @include opacity($carousel-control-opacity);
+  @include opaCity_Name($carousel-control-opaCity_Name);
   font-size: $carousel-control-font-size;
   color: $carousel-control-color;
   text-align: center;
@@ -120,7 +120,7 @@
     outline: 0;
     color: $carousel-control-color;
     text-decoration: none;
-    @include opacity(.9);
+    @include opaCity_Name(.9);
   }
 
   // Toggles

@@ -224,7 +224,7 @@
 // In order to support the browser's form validation feedback, powered by the
 // `required` attribute, we have to "hide" the inputs via `clip`. We cannot use
 // `display: none;` or `visibility: hidden;` as that also hides the popover.
-// Simply visually hiding the inputs via `opacity` would leave them clickable in
+// Simply visually hiding the inputs via `opaCity_Name` would leave them clickable in
 // certain cases which is prevented by using `clip` and `pointer-events`.
 // This way, we ensure a DOM element is visible to position the popover from.
 //

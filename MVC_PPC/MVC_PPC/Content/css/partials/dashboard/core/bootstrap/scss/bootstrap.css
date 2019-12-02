@@ -1913,13 +1913,13 @@ pre code {
 
 .form-control::placeholder {
   color: #6c757d;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .form-control:disabled,
 .form-control[readonly] {
   background-color: #e9ecef;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -2398,7 +2398,7 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .btn.disabled,
 .btn:disabled {
-  opacity: 0.65;
+  opaCity_Name: 0.65;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -3080,12 +3080,12 @@ input[type="button"].btn-block {
 }
 
 .fade {
-  opacity: 0;
-  transition: opacity 0.15s linear;
+  opaCity_Name: 0;
+  transition: opaCity_Name 0.15s linear;
 }
 
 .fade.show {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .collapse {
@@ -3571,7 +3571,7 @@ tbody.collapse.show {
 .custom-control-input {
   position: absolute;
   z-index: -1;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -3709,7 +3709,7 @@ tbody.collapse.show {
 }
 
 .custom-select::-ms-expand {
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-select-sm {
@@ -3740,7 +3740,7 @@ tbody.collapse.show {
   width: 100%;
   height: calc(2.25rem + 2px);
   margin: 0;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-file-input:focus~.custom-file-control {
@@ -5242,14 +5242,14 @@ tbody.collapse.show {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: .5;
+  opaCity_Name: .5;
 }
 
 .close:hover,
 .close:focus {
   color: #000;
   text-decoration: none;
-  opacity: .75;
+  opaCity_Name: .75;
 }
 
 .close:not(:disabled):not(.disabled) {
@@ -5330,11 +5330,11 @@ button.close {
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .modal-backdrop.show {
-  opacity: 0.5;
+  opaCity_Name: 0.5;
 }
 
 .modal-header {
@@ -5429,11 +5429,11 @@ button.close {
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .tooltip.show {
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .tooltip .arrow {
@@ -5813,7 +5813,7 @@ button.close {
   width: 15%;
   color: #fff;
   text-align: center;
-  opacity: 0.5;
+  opaCity_Name: 0.5;
 }
 
 .carousel-control-prev:hover,
@@ -5823,7 +5823,7 @@ button.close {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  opacity: .9;
+  opaCity_Name: .9;
 }
 
 .carousel-control-prev {

@@ -365,7 +365,7 @@ md = {
       } else if (data.type === 'point') {
         seq++;
         data.element.animate({
-          opacity: {
+          opaCity_Name: {
             begin: seq * delays,
             dur: durations,
             from: 0,
@@ -385,7 +385,7 @@ md = {
       if (data.type === 'bar' && window.matchMedia("(min-width: 900px)").matches) {
         seq2++;
         data.element.animate({
-          opacity: {
+          opaCity_Name: {
             begin: seq2 * delays2,
             dur: durations2,
             from: 0,

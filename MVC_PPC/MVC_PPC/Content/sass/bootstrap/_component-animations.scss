@@ -4,14 +4,14 @@
 
 // Heads up!
 //
-// We don't use the `.opacity()` mixin here since it causes a bug with text
+// We don't use the `.opaCity_Name()` mixin here since it causes a bug with text
 // fields in IE7-8. Source: https://github.com/twbs/bootstrap/pull/3552.
 
 .fade {
-  opacity: 0;
-  @include transition(opacity .15s linear);
+  opaCity_Name: 0;
+  @include transition(opaCity_Name .15s linear);
   &.in {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 }
 

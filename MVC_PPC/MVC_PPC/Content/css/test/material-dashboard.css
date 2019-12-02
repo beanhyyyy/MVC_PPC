@@ -2351,13 +2351,13 @@ pre code {
 
 .form-control::placeholder {
   color: #6c757d;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .form-control:disabled,
 .form-control[readonly] {
   background-color: #e9ecef;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 select.form-control:not([size]):not([multiple]) {
@@ -2836,7 +2836,7 @@ select.form-control-lg:not([size]):not([multiple]),
 
 .btn.disabled,
 .btn:disabled {
-  opacity: 0.65;
+  opaCity_Name: 0.65;
   box-shadow: none;
 }
 
@@ -3533,12 +3533,12 @@ input[type="button"].btn-block {
 }
 
 .fade {
-  opacity: 0;
-  transition: opacity 0.15s linear;
+  opaCity_Name: 0;
+  transition: opaCity_Name 0.15s linear;
 }
 
 .fade.show {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .collapse {
@@ -4033,7 +4033,7 @@ tbody.collapse.show {
 .custom-control-input {
   position: absolute;
   z-index: -1;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-control-input:checked~.custom-control-label::before {
@@ -4175,7 +4175,7 @@ tbody.collapse.show {
 }
 
 .custom-select::-ms-expand {
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-select-sm {
@@ -4206,7 +4206,7 @@ tbody.collapse.show {
   width: 100%;
   height: calc(2.4375rem + 2px);
   margin: 0;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .custom-file-input:focus~.custom-file-control {
@@ -5587,14 +5587,14 @@ tbody.collapse.show {
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
-  opacity: .5;
+  opaCity_Name: .5;
 }
 
 .close:hover,
 .close:focus {
   color: #000000;
   text-decoration: none;
-  opacity: .75;
+  opaCity_Name: .75;
 }
 
 .close:not(:disabled):not(.disabled) {
@@ -5799,11 +5799,11 @@ button.close {
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .modal-backdrop.show {
-  opacity: 0.26;
+  opaCity_Name: 0.26;
 }
 
 .modal-header {
@@ -5902,11 +5902,11 @@ button.close {
   line-break: auto;
   font-size: 0.875rem;
   word-wrap: break-word;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .tooltip.show {
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .tooltip .arrow {
@@ -6287,7 +6287,7 @@ button.close {
   width: 15%;
   color: #ffffff;
   text-align: center;
-  opacity: 0.5;
+  opaCity_Name: 0.5;
 }
 
 .carousel-control-prev:hover,
@@ -6297,7 +6297,7 @@ button.close {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  opacity: .9;
+  opaCity_Name: .9;
 }
 
 .carousel-control-prev {
@@ -11493,7 +11493,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input {
-  opacity: 0;
+  opaCity_Name: 0;
   position: absolute;
   margin: 0;
   z-index: -1;
@@ -11523,7 +11523,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
   width: 20px;
   border-radius: 100%;
   z-index: 1;
-  opacity: 0;
+  opaCity_Name: 0;
   margin: 0;
   top: 0;
   -webkit-transform: scale3d(2.3, 2.3, 1);
@@ -11559,7 +11559,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input:focus+.form-check-sign .check:after {
-  opacity: 0.2;
+  opaCity_Name: 0.2;
 }
 
 .form-check .form-check-input:checked+.form-check-sign .check {
@@ -11596,12 +11596,12 @@ fieldset[disabled] .form-check,
 fieldset[disabled] .form-check .form-check-input,
 .form-check .form-check-input[disabled]~.form-check-sign .check,
 .form-check .form-check-input[disabled]+.circle {
-  opacity: 0.5;
+  opaCity_Name: 0.5;
 }
 
 .form-check .form-check-input[disabled]~.form-check-sign .check {
   border-color: #000000;
-  opacity: .26;
+  opaCity_Name: .26;
 }
 
 .form-check .form-check-input[disabled]+.form-check-sign .check:after {
@@ -11629,29 +11629,29 @@ fieldset[disabled] .form-check .form-check-input,
 
 @keyframes rippleOn {
   0% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 
   50% {
-    opacity: 0.2;
+    opaCity_Name: 0.2;
   }
 
   100% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
 @keyframes rippleOff {
   0% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 
   50% {
-    opacity: 0.2;
+    opaCity_Name: 0.2;
   }
 
   100% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
@@ -11703,7 +11703,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 }
 
 .form-check .form-check-input {
-  opacity: 0;
+  opaCity_Name: 0;
   height: 0;
   width: 0;
   overflow: hidden;
@@ -11711,7 +11711,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 
 .form-check .form-check-input:checked~.check,
 .form-check .form-check-input:checked~.circle {
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .form-check .form-check-input:checked~.check {
@@ -11736,7 +11736,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 
 .form-check .form-check-input[disabled]~.check,
 .form-check .form-check-input[disabled]~.circle {
-  opacity: 0.26;
+  opaCity_Name: 0.26;
 }
 
 .form-check .form-check-input[disabled]~.check {
@@ -11770,7 +11770,7 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
   width: 15px;
   border-radius: 100%;
   z-index: 1;
-  opacity: 0;
+  opaCity_Name: 0;
   margin: 0;
   top: -1px;
   -webkit-transform: scale3d(2.3, 2.3, 1);
@@ -11810,29 +11810,29 @@ fieldset[disabled] .form-group.is-focused .form-check .form-check-label {
 
 @keyframes rippleOn {
   0% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 
   50% {
-    opacity: 0.2;
+    opaCity_Name: 0.2;
   }
 
   100% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
 @keyframes rippleOff {
   0% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 
   50% {
-    opacity: 0.2;
+    opaCity_Name: 0.2;
   }
 
   100% {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
@@ -13602,17 +13602,17 @@ select.form-control {
   line-height: 34px;
   text-align: center;
   pointer-events: none;
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 .has-success .form-control-feedback {
   color: #4caf50;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .has-danger .form-control-feedback {
   color: #f44336;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .form-group {
@@ -13632,7 +13632,7 @@ textarea {
 }
 
 .form-group input[type=file] {
-  opacity: 0;
+  opaCity_Name: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -14603,7 +14603,7 @@ h2.title {
 }
 
 .tooltip.show {
-  opacity: 1;
+  opaCity_Name: 1;
   -webkit-transform: translate3d(0, 0px, 0);
   -moz-transform: translate3d(0, 0px, 0);
   -o-transform: translate3d(0, 0px, 0);
@@ -14612,8 +14612,8 @@ h2.title {
 }
 
 .tooltip {
-  opacity: 0;
-  transition: opacity, transform .2s ease;
+  opaCity_Name: 0;
+  transition: opaCity_Name, transform .2s ease;
   -webkit-transform: translate3d(0, 5px, 0);
   -moz-transform: translate3d(0, 5px, 0);
   -o-transform: translate3d(0, 5px, 0);
@@ -14707,11 +14707,11 @@ h2.title {
   display: none;
   padding: 0.3125rem 0;
   border: 0;
-  opacity: 0;
+  opaCity_Name: 0;
   transform: scale(0);
   transform-origin: 0 0;
-  will-change: transform, opacity;
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opaCity_Name;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opaCity_Name 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
@@ -14725,13 +14725,13 @@ h2.title {
 .open>.dropdown-menu,
 .dropdown-menu.show {
   display: block;
-  opacity: 1;
+  opaCity_Name: 1;
   transform: scale(1);
 }
 
 .dropdown-menu.hiding {
   display: block;
-  opacity: 0;
+  opaCity_Name: 0;
   transform: scale(0);
 }
 
@@ -14774,7 +14774,7 @@ h2.title {
   margin-top: -4px;
   top: 1px;
   margin-right: 12px;
-  opacity: .5;
+  opaCity_Name: .5;
 }
 
 .dropdown-menu .dropdown-item,
@@ -14867,23 +14867,23 @@ h2.title {
 
 @keyframes bmd-dropdown-animation {
   from {
-    opacity: 0;
+    opaCity_Name: 0;
     transform: scale(0);
   }
 
   to {
-    opacity: 1;
+    opaCity_Name: 1;
     transform: scale(1);
   }
 }
 
 .dropdown-menu.bootstrap-datetimepicker-widget {
-  opacity: 0;
+  opaCity_Name: 0;
   transform: scale(0);
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: 0 0;
-  will-change: transform, opacity;
+  will-change: transform, opaCity_Name;
   top: 0;
 }
 
@@ -14892,7 +14892,7 @@ h2.title {
 }
 
 .dropdown-menu.bootstrap-datetimepicker-widget.open {
-  opacity: 1;
+  opaCity_Name: 1;
   transform: scale(1);
   top: 0;
 }
@@ -14927,7 +14927,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 }
 
 .togglebutton label input[type=checkbox] {
-  opacity: 0;
+  opaCity_Name: 0;
   width: 0;
   height: 0;
 }
@@ -15016,19 +15016,19 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   pointer-events: none;
   background-color: rgba(0, 0, 0, 0.05);
   border-radius: 100%;
-  opacity: 0;
+  opaCity_Name: 0;
   transform: scale(1);
   transform-origin: 50%;
 }
 
 .ripple-container .ripple-decorator.ripple-on {
-  opacity: 0.1;
-  transition: opacity 0.15s ease-in 0s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
+  opaCity_Name: 0.1;
+  transition: opaCity_Name 0.15s ease-in 0s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
 }
 
 .ripple-container .ripple-decorator.ripple-out {
-  opacity: 0;
-  transition: opacity 0.1s linear 0s !important;
+  opaCity_Name: 0;
+  transition: opaCity_Name 0.1s linear 0s !important;
 }
 
 .footer {
@@ -15328,7 +15328,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   content: "";
   display: block;
   background: #FFFFFF;
-  opacity: .94;
+  opaCity_Name: .94;
 }
 
 .sidebar .logo {
@@ -15414,7 +15414,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .sidebar[data-background-color="black"] .sidebar-background:after {
   background: #000;
-  opacity: .8;
+  opaCity_Name: .8;
 }
 
 .sidebar[data-background-color="black"] .nav li .dropdown-menu .dropdown-item {
@@ -15458,7 +15458,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .sidebar[data-color="white"] .nav .nav-item.active>a:not([data-toggle="collapse"]) {
   color: #3C4858;
-  opacity: 1;
+  opaCity_Name: 1;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(60, 72, 88, 0.4);
 }
 
@@ -15494,7 +15494,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .sidebar[data-background-color="red"] .sidebar-background:after {
   background: #f44336;
-  opacity: .8;
+  opaCity_Name: .8;
 }
 
 .sidebar[data-background-color="red"] .user:after,
@@ -15510,7 +15510,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .sidebar[data-image]:after,
 .sidebar.has-image:after {
-  opacity: .77;
+  opaCity_Name: .77;
 }
 
 .off-canvas-sidebar .navbar-collapse .nav>li>a,
@@ -16597,7 +16597,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   border: 3px solid #FFF;
   padding-left: 0;
   padding-right: 0;
-  opacity: 1;
+  opaCity_Name: 1;
   cursor: pointer;
   display: block;
   max-height: 100px;
@@ -16650,14 +16650,14 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .fixed-plugin .dropdown .dropdown-menu {
   top: -40px !important;
-  opacity: 0;
+  opaCity_Name: 0;
   left: -303px !important;
   transform-origin: 100% 0;
   display: block;
 }
 
 .fixed-plugin .dropdown.show .dropdown-menu {
-  opacity: 1;
+  opaCity_Name: 1;
   transform: scale(1);
 }
 
@@ -17276,8 +17276,8 @@ label {
   height: 100%;
   background-size: cover;
   z-index: -1;
-  transition: opacity .45s;
-  opacity: 0;
+  transition: opaCity_Name .45s;
+  opaCity_Name: 0;
 }
 
 .card .card-header.card-header-image.no-shadow {
@@ -18018,13 +18018,13 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes fadeInDown {
   from {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
 
   to {
-    opacity: 1;
+    opaCity_Name: 1;
     -webkit-transform: none;
     transform: none;
   }
@@ -18032,13 +18032,13 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes fadeInDown {
   from {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
 
   to {
-    opacity: 1;
+    opaCity_Name: 1;
     -webkit-transform: none;
     transform: none;
   }
@@ -18051,21 +18051,21 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes fadeOut {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
 @keyframes fadeOut {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 }
 
@@ -18076,11 +18076,11 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes fadeOutDown {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
@@ -18088,11 +18088,11 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes fadeOutDown {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, 100%, 0);
     transform: translate3d(0, 100%, 0);
   }
@@ -18105,11 +18105,11 @@ Copyright (c) 2015 Daniel Eden
 
 @-webkit-keyframes fadeOutUp {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
@@ -18117,11 +18117,11 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes fadeOutUp {
   from {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   to {
-    opacity: 0;
+    opaCity_Name: 0;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
   }
@@ -18250,7 +18250,7 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail>.ps-scrollbar-x {
@@ -18260,7 +18260,7 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail>.ps-scrollbar-y {
@@ -18272,11 +18272,11 @@ Copyright (c) 2015 Daniel Eden
   display: none;
   position: absolute;
   /* please don't change 'position' */
-  opacity: 0;
-  -webkit-transition: background-color .2s linear, opacity .2s linear;
-  -o-transition: background-color .2s linear, opacity .2s linear;
-  -moz-transition: background-color .2s linear, opacity .2s linear;
-  transition: background-color .2s linear, opacity .2s linear;
+  opaCity_Name: 0;
+  -webkit-transition: background-color .2s linear, opaCity_Name .2s linear;
+  -o-transition: background-color .2s linear, opaCity_Name .2s linear;
+  -moz-transition: background-color .2s linear, opaCity_Name .2s linear;
+  transition: background-color .2s linear, opaCity_Name .2s linear;
   bottom: 0px;
   /* there must be 'bottom' for ps-scrollbar-x-rail */
   height: 15px;
@@ -18309,11 +18309,11 @@ Copyright (c) 2015 Daniel Eden
   display: none;
   position: absolute;
   /* please don't change 'position' */
-  opacity: 0;
-  -webkit-transition: background-color .2s linear, opacity .2s linear;
-  -o-transition: background-color .2s linear, opacity .2s linear;
-  -moz-transition: background-color .2s linear, opacity .2s linear;
-  transition: background-color .2s linear, opacity .2s linear;
+  opaCity_Name: 0;
+  -webkit-transition: background-color .2s linear, opaCity_Name .2s linear;
+  -o-transition: background-color .2s linear, opaCity_Name .2s linear;
+  -moz-transition: background-color .2s linear, opaCity_Name .2s linear;
+  transition: background-color .2s linear, opaCity_Name .2s linear;
   right: 0;
   /* there must be 'right' for ps-scrollbar-y-rail */
   width: 15px;
@@ -18344,7 +18344,7 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container:hover.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container:hover.ps-in-scrolling.ps-x>.ps-scrollbar-x-rail>.ps-scrollbar-x {
@@ -18354,7 +18354,7 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container:hover.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container:hover.ps-in-scrolling.ps-y>.ps-scrollbar-y-rail>.ps-scrollbar-y {
@@ -18364,12 +18364,12 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container:hover>.ps-scrollbar-x-rail,
 .ps-container:hover>.ps-scrollbar-y-rail {
-  opacity: 0.6;
+  opaCity_Name: 0.6;
 }
 
 .ps-container:hover>.ps-scrollbar-x-rail:hover {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container:hover>.ps-scrollbar-x-rail:hover>.ps-scrollbar-x {
@@ -18378,7 +18378,7 @@ Copyright (c) 2015 Daniel Eden
 
 .ps-container:hover>.ps-scrollbar-y-rail:hover {
   background-color: #eee;
-  opacity: 0.9;
+  opaCity_Name: 0.9;
 }
 
 .ps-container:hover>.ps-scrollbar-y-rail:hover>.ps-scrollbar-y {
@@ -18548,7 +18548,7 @@ Copyright (c) 2015 Daniel Eden
     padding-top: 0;
     height: 300px;
     animation: none;
-    opacity: 1;
+    opaCity_Name: 1;
     overflow-y: scroll;
   }
 
@@ -18560,7 +18560,7 @@ Copyright (c) 2015 Daniel Eden
     height: 100%;
     width: 100%;
     position: fixed;
-    opacity: 0;
+    opaCity_Name: 0;
     top: 0;
     left: auto;
     right: 230px;
@@ -18783,7 +18783,7 @@ Copyright (c) 2015 Daniel Eden
 
   .nav-mobile-menu .dropdown .dropdown-menu.hiding {
     transform: none;
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   .nav-mobile-menu .dropdown.show .dropdown-menu {
@@ -19036,7 +19036,7 @@ Copyright (c) 2015 Daniel Eden
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 0;
+    opaCity_Name: 0;
     top: 0;
     left: auto;
     background: rgba(0, 0, 0, 0.35);
@@ -19051,7 +19051,7 @@ Copyright (c) 2015 Daniel Eden
   }
 
   .close-layer.visible {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   .navbar-toggler .icon-bar {
@@ -19328,7 +19328,7 @@ Copyright (c) 2015 Daniel Eden
   }
 
   .navbar-toggler .icon-bar:nth-child(3) {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   .navbar-toggler .icon-bar:nth-child(4) {
@@ -19352,7 +19352,7 @@ Copyright (c) 2015 Daniel Eden
   }
 
   .navbar-toggler.toggled .icon-bar:nth-child(3) {
-    opacity: 0;
+    opaCity_Name: 0;
   }
 
   .navbar-toggler.toggled .icon-bar:nth-child(4) {
@@ -19367,31 +19367,31 @@ Copyright (c) 2015 Daniel Eden
 
   @-webkit-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opaCity_Name: 0;
     }
 
     100% {
-      opacity: 1;
+      opaCity_Name: 1;
     }
   }
 
   @-moz-keyframes fadeIn {
     0% {
-      opacity: 0;
+      opaCity_Name: 0;
     }
 
     100% {
-      opacity: 1;
+      opaCity_Name: 1;
     }
   }
 
   @keyframes fadeIn {
     0% {
-      opacity: 0;
+      opaCity_Name: 0;
     }
 
     100% {
-      opacity: 1;
+      opaCity_Name: 1;
     }
   }
 
@@ -19434,12 +19434,12 @@ Copyright (c) 2015 Daniel Eden
   [class*="navbar-"] .navbar-nav .open .dropdown-menu>li>a,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu>li>a:hover,
   [class*="navbar-"] .navbar-nav .open .dropdown-menu>li>a:focus {
-    opacity: .7;
+    opaCity_Name: .7;
     background: transparent;
   }
 
   [class*="navbar-"] .navbar-nav.navbar-nav .open .dropdown-menu>li>a:active {
-    opacity: 1;
+    opaCity_Name: 1;
   }
 
   [class*="navbar-"] .navbar-nav .dropdown>a:hover .caret {
@@ -19464,7 +19464,7 @@ Copyright (c) 2015 Daniel Eden
     height: 100%;
     width: 100%;
     position: fixed;
-    opacity: 0;
+    opaCity_Name: 0;
     top: 0;
     left: auto;
     right: 260px;
@@ -20433,7 +20433,7 @@ Copyright (c) 2015 Daniel Eden
 .dark-edition .sidebar .sidebar-background:after,
 .dark-edition .sidebar {
   background: #1f283e;
-  opacity: .94;
+  opaCity_Name: .94;
 }
 
 .dark-edition .sidebar[data-background-color="black"] .nav li:not(.active) a,
@@ -22035,7 +22035,7 @@ fieldset[disabled][disabled] .dark-edition .has-error .form-control,
 .dark-edition .alert .close:hover,
 .dark-edition .alert .close:focus {
   color: #fff;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 @keyframes heartbeat {

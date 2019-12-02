@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .btn.with-arrow i {
   visibility: hidden;
-  opacity: 0;
+  opaCity_Name: 0;
   position: absolute;
   right: 0px;
   top: 50%;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #fff;
   right: 18px;
   visibility: visible;
-  opacity: 1;
+  opaCity_Name: 1;
 }
 
 .form-control {
@@ -556,7 +556,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-hero .flexslider .fh5co-property-brief {
   display: table;
-  opacity: 0;
+  opaCity_Name: 0;
   min-height: 700px;
   width: 100%;
 }
@@ -1099,7 +1099,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-grid-products .item-grid .title, #fh5co-grid-products .item-grid .icon, #fh5co-grid-products .item-grid .category {
   top: 50px;
   position: relative;
-  opacity: 0;
+  opaCity_Name: 0;
   visibility: hidden;
 }
 #fh5co-grid-products .item-grid .title {
@@ -1117,7 +1117,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-grid-products .item-grid:hover .icon, #fh5co-grid-products .item-grid:hover .title, #fh5co-grid-products .item-grid:hover .category {
   top: 0;
-  opacity: 1;
+  opaCity_Name: 1;
   visibility: visible;
 }
 #fh5co-grid-products .item-grid:hover .v-align {
@@ -1226,7 +1226,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
 }
 #fh5co-blog .fh5co-entry:hover figure {
-  opacity: .7;
+  opaCity_Name: .7;
 }
 #fh5co-blog .fh5co-entry:hover, #fh5co-blog .fh5co-entry:active, #fh5co-blog .fh5co-entry:focus {
   text-decoration: none !important;
@@ -1673,7 +1673,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .js .animate-box {
-  opacity: 0;
+  opaCity_Name: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

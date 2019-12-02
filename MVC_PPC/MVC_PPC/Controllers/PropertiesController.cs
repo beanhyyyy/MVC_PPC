@@ -17,8 +17,8 @@ namespace MVC_PPC.Controllers
         // GET: Properties
         public ActionResult Index()
         {
-            var properties = db.Properties.Include(p => p.District).Include(p => p.Property_Status).Include(p => p.Property_Type);
-            return View(properties.ToList());
+            var properties = db.Properties.Include(p => p.District).Include(p => p.Property_Status).Include(p => p.Property_Type).ToList();
+            return View(properties);
         }
 
         // GET: Properties/Details/5
@@ -39,11 +39,23 @@ namespace MVC_PPC.Controllers
         // GET: Properties/Create
         public ActionResult Create()
         {
-            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
-            ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name");
+            List<City> CityList = db.Cities.ToList();
+            ViewBag.CityList = new SelectList(CityList, "ID", "City_Name");
+
+
+            //ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
+            ViewBag.District_ID = new SelectList(db.Districts, "City_ID", "District_Name");
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name");
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name");
             return View();
+        }
+
+        //JSON CITY DISTRICT
+        public JsonResult GetDistrictList(int ID)
+        {
+            db.Configuration.ProxyCreationEnabled = false;
+            List<District> DistrictList = db.Districts.Where(x => x.City_ID == ID).ToList();
+            return Json(DistrictList, JsonRequestBehavior.AllowGet); 
         }
 
         // POST: Properties/Create
@@ -59,7 +71,7 @@ namespace MVC_PPC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
@@ -78,6 +90,7 @@ namespace MVC_PPC.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
@@ -97,6 +110,7 @@ namespace MVC_PPC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
@@ -137,5 +151,9 @@ namespace MVC_PPC.Controllers
             }
             base.Dispose(disposing);
         }
+
+        
+
+
     }
 }
