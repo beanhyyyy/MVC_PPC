@@ -10,13 +10,26 @@
 
 
 <div class="col-md-12">
-    
+
     <div class="card card-plain">
         <div class="card-header card-header-primary">
             <h4 class="card-title mt-0"> Table of property</h4>
-            
+
             <p class="card-category"> Here is a subtitle for this table</p>
         </div>
+
+        
+
+        @using (Html.BeginForm())
+        {
+            
+        <div class="input-group no-border">
+            
+            <b style="color:white">Title:</b> @Html.TextBox("SearchString", null, new { @class = "bigfield" })<input type="submit" value="Tìm kiếm" placeholder="Search.."/>
+        </div>
+        }
+
+
         <br />
         <br />
         <div>
@@ -40,11 +53,11 @@
                         <th>
                             @Html.DisplayNameFor(model => model.Price)
                         </th>
-                        
+
                         <th>
                             @Html.DisplayNameFor(model => model.Avatar)
                         </th>
-                        
+
                         <th>
                             City_Name
                         </th>
@@ -62,44 +75,44 @@
 
                     @foreach (var item in Model)
                     {
-                    <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Property_Code)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Property_Name)
-                        </td>
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Property_Code)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Property_Name)
+                            </td>
 
-                        <td>
-                            @if (item.Price.HasValue)
-                            {
-                                @item.Price.Value.ToString("N0")
-                            }
-                        </td>
-                        
-                        <td>
-                            <img src="@Url.Action("../Content/Images", new { id = item.Avatar})" width="auto" height="100"/>
-                            @Html.DisplayFor(modelItem => item.Avatar)
-                        </td>
-                        
-                        <td>
-                            @Html.DisplayFor(modelItem => item.District.City.City_Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.District.District_Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Property_Status.Property_Status_Name)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Property_Type.Property_Type_Name)
-                        </td>
-                        <td>
-                            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.ID })
-                        </td>
-                    </tr>
+                            <td>
+                                @if (item.Price.HasValue)
+                                {
+                                    @item.Price.Value.ToString("N0")
+                                }
+                            </td>
+
+                            <td>
+                                <img src="@Url.Action("../Content/Images", new { id = item.Avatar})" width="auto" height="100" />
+                                @Html.DisplayFor(modelItem => item.Avatar)
+                            </td>
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.District.City.City_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.District.District_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Property_Status.Property_Status_Name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Property_Type.Property_Type_Name)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                            </td>
+                        </tr>
                     }
                 </table>
             </div>

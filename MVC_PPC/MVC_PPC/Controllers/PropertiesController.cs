@@ -16,11 +16,25 @@ namespace MVC_PPC.Controllers
         private PPCDBEntities db = new PPCDBEntities();
 
         // GET: Properties
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
             var properties = db.Properties.Include(p => p.District).Include(p => p.Property_Status).Include(p => p.Property_Type).ToList();
-            return View(properties);
+
+            ViewBag.Message = TempData["StatusMessage"];
+
+            var links = from l in db.Properties
+                        select l;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                links = links.Where(s => s.Property_Name.Contains(searchString));
+            }
+
+
+            return View(links);
         }
+
+        
 
         // GET: Properties/Details/5
         public ActionResult Details(int? id)
@@ -74,6 +88,7 @@ namespace MVC_PPC.Controllers
 
                     //Accept all and persistence
                     scope.Complete();
+                    TempData["StatusMessage"] = "Create successfully";
                     return RedirectToAction("Index");
                 }
 
