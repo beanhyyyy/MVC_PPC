@@ -40,15 +40,11 @@
                         <th>
                             @Html.DisplayNameFor(model => model.Price)
                         </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Installment_Rate)
-                        </th>
+                        
                         <th>
                             @Html.DisplayNameFor(model => model.Avatar)
                         </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Album)
-                        </th>
+                        
                         <th>
                             City_Name
                         </th>
@@ -80,18 +76,14 @@
                                 @item.Price.Value.ToString("N0")
                             }
                         </td>
+                        
                         <td>
-                            @Html.DisplayFor(modelItem => item.Installment_Rate)
-                        </td>
-                        <td>
-                            <img src="@Url.Action("Images", new { id = item.Avatar})" />
+                            <img src="@Url.Action("../Content/Images", new { id = item.Avatar})" width="auto" height="100"/>
                             @Html.DisplayFor(modelItem => item.Avatar)
                         </td>
+                        
                         <td>
-                            @Html.DisplayFor(modelItem => item.Album)
-                        </td>
-                        <td>
-                            @item.District_ID   
+                            @Html.DisplayFor(modelItem => item.District.City.City_Name)
                         </td>
                         <td>
                             @Html.DisplayFor(modelItem => item.District.District_Name)

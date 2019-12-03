@@ -38,7 +38,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -46,14 +46,15 @@
         <div class="form-group">
             <label class="control-label col-md-2">City_ID</label>
             <div class="col-md-10">
-                @Html.DropDownList("ID", ViewBag.CityList as SelectList, "--Select City--", htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("City_ID", null, "--Select District--", htmlAttributes: new { @class = "form-control" })
             </div>
         </div>
 
         <div class="form-group">
             @Html.LabelFor(model => model.District_ID, "District_ID", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("District_ID", ViewBag.DistrictList as SelectList, "--Select District--", htmlAttributes: new { @class = "form-control" })
+                @Html.DropDownList("District_ID", null, "--Select District--", htmlAttributes: new { @class = "form-control" })
+                
                 @Html.ValidationMessageFor(model => model.District_ID, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -109,18 +110,12 @@
         <div class="form-group">
             <label for="1201" class="control-label col-md-2">Hình ảnh</label>
             <div class="col-md-10">
-                <input type="file" name="Images" id="1201" onchange="readIMG(this)" />
+                <input type="file" name="Image" id="1201" onchange="readIMG(this)" />
                 <img id="Demo" />
             </div>
         </div>
 
-        <div class="form-group">
-            @Html.LabelFor(model => model.Album, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Album, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Album, "", new { @class = "text-danger" })
-            </div>
-        </div>
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.Property_Status_ID, "Property_Status_ID", htmlAttributes: new { @class = "control-label col-md-2" })
@@ -165,19 +160,6 @@
         }
     }
 </script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#ID").change(function () {
-            $.get("/Properties/GetDistrictList", { City_ID: $("ID").val() }, function (data) {
-                $("#District_ID").empty();
-                $.each(data, function (index, row) {
 
-                    $("#District_ID").append("<option value='" + row.District_ID + "'>" + row.District_Name + "</option>")
-                });
-            });
-        });
-    });
-
-</script>
 
 

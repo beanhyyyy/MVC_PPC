@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using MVC_PPC.Models;
+using System.Transactions;
 
 namespace MVC_PPC.Controllers
 {
@@ -39,24 +40,15 @@ namespace MVC_PPC.Controllers
         // GET: Properties/Create
         public ActionResult Create()
         {
-            List<City> CityList = db.Cities.ToList();
-            ViewBag.CityList = new SelectList(CityList, "ID", "City_Name");
-
-
-            //ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
+            
+            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "City_ID", "District_Name");
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name");
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name");
             return View();
         }
 
-        //JSON CITY DISTRICT
-        public JsonResult GetDistrictList(int ID)
-        {
-            db.Configuration.ProxyCreationEnabled = false;
-            List<District> DistrictList = db.Districts.Where(x => x.City_ID == ID).ToList();
-            return Json(DistrictList, JsonRequestBehavior.AllowGet); 
-        }
+        
 
         // POST: Properties/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
@@ -67,15 +59,37 @@ namespace MVC_PPC.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Properties.Add(property);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                using (var scope = new TransactionScope())
+                {
+                   
+
+                    //Add model to database
+                    db.Properties.Add(property);
+                    db.SaveChanges();
+
+                    //Save file to App_Data
+                    var path = Server.MapPath("~/App_Data");
+                    path = System.IO.Path.Combine(path, property.ID.ToString());
+                    Request.Files["Image"].SaveAs(path);
+
+                    //Accept all and persistence
+                    scope.Complete();
+                    return RedirectToAction("Index");
+                }
+
             }
             ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
             return View(property);
+        }
+
+        public ActionResult Image(string id)
+        {
+            var path = Server.MapPath("~/App_Data");
+            path = System.IO.Path.Combine(path, id);
+            return File(path, "image/*");
         }
 
         // GET: Properties/Edit/5

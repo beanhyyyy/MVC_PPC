@@ -51,6 +51,7 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -176,6 +177,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\Full_ContractController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
@@ -253,8 +255,10 @@
     <Content Include="Content\demo\demo.js" />
     <Content Include="Content\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="Content\fonts\icomoon\icomoon.svg" />
+    <Content Include="Content\images\1.jpg" />
     <Content Include="Content\images\apple-icon.png" />
     <Content Include="Content\images\cover.jpg" />
+    <Content Include="Content\images\donaltrump.jpg" />
     <Content Include="Content\images\faces\avatar.jpg" />
     <Content Include="Content\images\faces\card-profile1-square.jpg" />
     <Content Include="Content\images\faces\card-profile2-square.jpg" />
@@ -633,19 +637,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Views\Properties\Images\ppc0001.jpg" />
-    <Content Include="Views\Properties\Images\ppc0002.jpg" />
-    <Content Include="Views\Properties\Images\ppc0003.jpg" />
-    <Content Include="Views\Properties\Images\ppc0004.jpg" />
-    <Content Include="Views\Properties\Images\ppc0005.jpg" />
-    <Content Include="Views\Properties\Images\ppc0006.jpg" />
-    <Content Include="Views\Properties\Images\ppc0007.jpg" />
-    <Content Include="Views\Properties\Images\ppc0008.jpg" />
-    <Content Include="Views\Properties\Images\ppc0009.jpg" />
-    <Content Include="Views\Properties\Images\ppc0010.jpg" />
-    <Content Include="Views\Properties\Images\PPCLogo-128-128.png" />
-    <Content Include="Views\Properties\Images\PPCLogo.png" />
-    <Content Include="Views\Properties\Images\user2-160x160.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -686,6 +677,11 @@
     <Content Include="Views\Properties\Edit.cshtml" />
     <Content Include="Views\Properties\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Full_Contract\Create.cshtml" />
+    <Content Include="Views\Full_Contract\Delete.cshtml" />
+    <Content Include="Views\Full_Contract\Details.cshtml" />
+    <Content Include="Views\Full_Contract\Edit.cshtml" />
+    <Content Include="Views\Full_Contract\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
