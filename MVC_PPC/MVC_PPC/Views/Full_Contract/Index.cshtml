@@ -2,7 +2,7 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <h2>Index</h2>
@@ -29,22 +29,7 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Mobile)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Date_Of_Contract)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Deposit)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Remain)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
+        </th>        
         <th>
             @Html.DisplayNameFor(model => model.Property.Property_Code)
         </th>
@@ -70,29 +55,15 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Mobile)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Date_Of_Contract)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Deposit)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Remain)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
+        </td>       
         <td>
             @Html.DisplayFor(modelItem => item.Property.Property_Code)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.ID }) |
+            @Html.ActionLink("Print", "Print", new { id = item.ID }) 
         </td>
     </tr>
 }

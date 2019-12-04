@@ -97,7 +97,7 @@ namespace MVC_PPC.Controllers
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
-            return View(property);
+            return View("Index");
         }
 
         public ActionResult Image(string id)

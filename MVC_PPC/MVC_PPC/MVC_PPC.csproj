@@ -179,6 +179,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Full_ContractController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Installment_ContractController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -188,6 +189,8 @@
     <Compile Include="Models\City.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Installment_ContractModels.cs" />
+    <Compile Include="Models\FullContractPrintModels.cs" />
     <Compile Include="Models\District.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -626,6 +629,7 @@
     <Content Include="Content\sass\material-dashboard\_type.scss" />
     <Content Include="Content\sass\material-dashboard\_variables.scss" />
     <Content Include="Content\js\material-dashboard.js.map" />
+    <Content Include="Content\fonts\SourceSansPro-Regular.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -682,6 +686,13 @@
     <Content Include="Views\Full_Contract\Details.cshtml" />
     <Content Include="Views\Full_Contract\Edit.cshtml" />
     <Content Include="Views\Full_Contract\Index.cshtml" />
+    <Content Include="Views\Full_Contract\Print.cshtml" />
+    <Content Include="Views\Installment_Contract\Create.cshtml" />
+    <Content Include="Views\Installment_Contract\Delete.cshtml" />
+    <Content Include="Views\Installment_Contract\Details.cshtml" />
+    <Content Include="Views\Installment_Contract\Edit.cshtml" />
+    <Content Include="Views\Installment_Contract\Index.cshtml" />
+    <Content Include="Views\Installment_Contract\Print.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
