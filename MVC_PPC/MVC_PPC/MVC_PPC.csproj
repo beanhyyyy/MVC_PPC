@@ -251,6 +251,7 @@
     <Content Include="Content\css\icomoon.css" />
     <Content Include="Content\css\material-dashboard.css" />
     <Content Include="Content\css\material-dashboard.min.css" />
+    <Content Include="Content\css\myCss.css" />
     <Content Include="Content\css\partials\dashboard\core\bootstrap\scss\bootstrap-grid.css" />
     <Content Include="Content\css\partials\dashboard\core\bootstrap\scss\bootstrap-reboot.css" />
     <Content Include="Content\css\partials\dashboard\core\bootstrap\scss\bootstrap.css" />
