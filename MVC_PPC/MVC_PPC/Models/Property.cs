@@ -19,6 +19,7 @@ namespace MVC_PPC.Models
         {
             this.Full_Contract = new HashSet<Full_Contract>();
             this.Installment_Contract = new HashSet<Installment_Contract>();
+            this.Property_Service = new HashSet<Property_Service>();
         }
     
         public int ID { get; set; }
@@ -44,5 +45,7 @@ namespace MVC_PPC.Models
         public virtual ICollection<Installment_Contract> Installment_Contract { get; set; }
         public virtual Property_Status Property_Status { get; set; }
         public virtual Property_Type Property_Type { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Property_Service> Property_Service { get; set; }
     }
 }

@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Login</h2>
+
+@*https://images4.alphacoders.com/556/thumb-1920-556883.jpg
+https://images.alphacoders.com/102/1026501.jpg
+https://wallpapercart.com/wp-content/uploads/2019/09/Iron-Man-Marvel-Comics-HD-Wallpaper-Background-Image.jpg
+https://wallpaperaccess.com/full/441431.jpg*@
+
+<body class="hold-transition login-page" style="background: url('https://wallpaperaccess.com/full/441431.jpg')">
+    <div class="login-box" style="margin-top: 300px">
+        <div class="login-logo">
+            <a href="../../index2.html"><b>Admin</b>LTE</a>
+        </div>
+        <!-- /.login-logo -->
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Sign in to start your session</p>
+                <form action="~/Auth/Login" method="post">
+                    <div class="input-group mb-3">
+                        <input name="Username" type="text" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input name="Password" type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="icheck-primary">
+                                @*<input type="checkbox" id="remember">
+                                <label for="remember">
+                                    Remember Me
+                                </label>*@
+                            </div>
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                </form>
+                <!-- /.social-auth-links -->
+                @*<p class="mb-1">
+                    <a href="forgot-password.html">I forgot my password</a>
+                </p>
+                <p class="mb-0">
+                    <a href="register.html" class="text-center">Register a new membership</a>
+                </p>*@
+            </div>
+            <!-- /.login-card-body -->
+        </div>
+    </div>
+    
+</body>

@@ -4,7 +4,20 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="PPCDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="PPCDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'PPCDB.dbo.Account' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Username" Type="varchar" MaxLength="100" />
+          <Property Name="Password" Type="varchar" MaxLength="100" />
+          <Property Name="Full_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Role" Type="nvarchar" MaxLength="30" />
+          <Property Name="IsActive" Type="bit" />
+        </EntityType>
         <EntityType Name="City">
           <Key>
             <PropertyRef Name="ID" />
@@ -182,6 +195,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Property_Service_Property">
+          <End Role="Property" Type="Self.Property" Multiplicity="1" />
+          <End Role="Property_Service" Type="Self.Property_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Property">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Property_Service">
+              <PropertyRef Name="Property_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Property_Service_Service">
           <End Role="Service" Type="Self.Service" Multiplicity="1" />
           <End Role="Property_Service" Type="Self.Property_Service" Multiplicity="*" />
@@ -204,6 +229,16 @@
           <EntitySet Name="Property_Status" EntityType="Self.Property_Status" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Property_Type" EntityType="Self.Property_Type" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Service" EntityType="Self.Service" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Account" EntityType="Self.Account" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Account].[ID] AS [ID], 
+    [Account].[Username] AS [Username], 
+    [Account].[Password] AS [Password], 
+    [Account].[Full_Name] AS [Full_Name], 
+    [Account].[Role] AS [Role], 
+    [Account].[IsActive] AS [IsActive]
+    FROM [dbo].[Account] AS [Account]</DefiningQuery>
+          </EntitySet>
           <AssociationSet Name="FK_District_City" Association="Self.FK_District_City">
             <End Role="City" EntitySet="City" />
             <End Role="District" EntitySet="District" />
@@ -227,6 +262,10 @@
           <AssociationSet Name="FK_Property_Property_Type" Association="Self.FK_Property_Property_Type">
             <End Role="Property_Type" EntitySet="Property_Type" />
             <End Role="Property" EntitySet="Property" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Property_Service_Property" Association="Self.FK_Property_Service_Property">
+            <End Role="Property" EntitySet="Property" />
+            <End Role="Property_Service" EntitySet="Property_Service" />
           </AssociationSet>
           <AssociationSet Name="FK_Property_Service_Service" Association="Self.FK_Property_Service_Service">
             <End Role="Service" EntitySet="Service" />
@@ -322,6 +361,7 @@
           <NavigationProperty Name="Installment_Contract" Relationship="Self.FK_Installment_Contract_Property" FromRole="Property" ToRole="Installment_Contract" />
           <NavigationProperty Name="Property_Status" Relationship="Self.FK_Property_Property_Status" FromRole="Property" ToRole="Property_Status" />
           <NavigationProperty Name="Property_Type" Relationship="Self.FK_Property_Property_Type" FromRole="Property" ToRole="Property_Type" />
+          <NavigationProperty Name="Property_Service" Relationship="Self.FK_Property_Service_Property" FromRole="Property" ToRole="Property_Service" />
         </EntityType>
         <EntityType Name="Property_Service">
           <Key>
@@ -330,6 +370,7 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Service_ID" Type="Int32" Nullable="false" />
           <Property Name="Property_ID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Property" Relationship="Self.FK_Property_Service_Property" FromRole="Property_Service" ToRole="Property" />
           <NavigationProperty Name="Service" Relationship="Self.FK_Property_Service_Service" FromRole="Property_Service" ToRole="Service" />
         </EntityType>
         <EntityType Name="Property_Status">
@@ -356,6 +397,17 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Service_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Property_Service" Relationship="Self.FK_Property_Service_Service" FromRole="Service" ToRole="Property_Service" />
+        </EntityType>
+        <EntityType Name="Account">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="Full_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Role" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="IsActive" Type="Boolean" />
         </EntityType>
         <Association Name="FK_District_City">
           <End Role="City" Type="Self.City" Multiplicity="1" />
@@ -429,6 +481,18 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_Property_Service_Property">
+          <End Role="Property" Type="Self.Property" Multiplicity="1" />
+          <End Role="Property_Service" Type="Self.Property_Service" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Property">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Property_Service">
+              <PropertyRef Name="Property_ID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_Property_Service_Service">
           <End Role="Service" Type="Self.Service" Multiplicity="1" />
           <End Role="Property_Service" Type="Self.Property_Service" Multiplicity="*" />
@@ -451,6 +515,7 @@
           <EntitySet Name="Property_Status" EntityType="Self.Property_Status" />
           <EntitySet Name="Property_Type" EntityType="Self.Property_Type" />
           <EntitySet Name="Services" EntityType="Self.Service" />
+          <EntitySet Name="Accounts" EntityType="Self.Account" />
           <AssociationSet Name="FK_District_City" Association="Self.FK_District_City">
             <End Role="City" EntitySet="Cities" />
             <End Role="District" EntitySet="Districts" />
@@ -474,6 +539,10 @@
           <AssociationSet Name="FK_Property_Property_Type" Association="Self.FK_Property_Property_Type">
             <End Role="Property_Type" EntitySet="Property_Type" />
             <End Role="Property" EntitySet="Properties" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Property_Service_Property" Association="Self.FK_Property_Service_Property">
+            <End Role="Property" EntitySet="Properties" />
+            <End Role="Property_Service" EntitySet="Property_Service" />
           </AssociationSet>
           <AssociationSet Name="FK_Property_Service_Service" Association="Self.FK_Property_Service_Service">
             <End Role="Service" EntitySet="Services" />
@@ -597,6 +666,18 @@
               <MappingFragment StoreEntitySet="Service">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Service_Name" ColumnName="Service_Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Accounts">
+            <EntityTypeMapping TypeName="PPCDBModel.Account">
+              <MappingFragment StoreEntitySet="Account">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Full_Name" ColumnName="Full_Name" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+                <ScalarProperty Name="IsActive" ColumnName="IsActive" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

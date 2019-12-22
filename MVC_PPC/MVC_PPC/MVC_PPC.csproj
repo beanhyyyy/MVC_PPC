@@ -176,31 +176,36 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Full_ContractController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Installment_ContractController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\PropertiesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Account.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\City.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Installment_ContractModels.cs" />
-    <Compile Include="Models\FullContractPrintModels.cs" />
     <Compile Include="Models\District.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Full_Contract.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Installment_Contract.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Installment_ContractModels.cs" />
+    <Compile Include="Models\FullContractPrintModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -260,6 +265,7 @@
     <Content Include="Content\fonts\icomoon\icomoon.svg" />
     <Content Include="Content\images\1.jpg" />
     <Content Include="Content\images\apple-icon.png" />
+    <Content Include="Content\images\backgroud.jpg" />
     <Content Include="Content\images\cover.jpg" />
     <Content Include="Content\images\donaltrump.jpg" />
     <Content Include="Content\images\faces\avatar.jpg" />
@@ -428,13 +434,6 @@
     <Content Include="Content\sass\_bootstrap-compass.scss" />
     <Content Include="Content\sass\_bootstrap-mincer.scss" />
     <Content Include="Content\sass\_bootstrap-sprockets.scss" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\css\material-dashboard.css.map" />
     <Content Include="Content\css\partials\dashboard\core\bootstrap\scss\bootstrap-grid.css.map" />
     <Content Include="Content\css\partials\dashboard\core\bootstrap\scss\bootstrap-reboot.css.map" />
@@ -630,6 +629,13 @@
     <Content Include="Content\sass\material-dashboard\_variables.scss" />
     <Content Include="Content\js\material-dashboard.js.map" />
     <Content Include="Content\fonts\SourceSansPro-Regular.ttf" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -693,6 +699,8 @@
     <Content Include="Views\Installment_Contract\Edit.cshtml" />
     <Content Include="Views\Installment_Contract\Index.cshtml" />
     <Content Include="Views\Installment_Contract\Print.cshtml" />
+    <Content Include="Views\Auth\Login.cshtml" />
+    <Content Include="Views\Auth\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

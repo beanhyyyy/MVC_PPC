@@ -4,14 +4,10 @@
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
+<h2>Index</h2>
+
+<body @*style="background: url('')"*@>
     <p>
         @Html.ActionLink("Create New", "Create")
     </p>
@@ -38,27 +34,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.Date_Of_Contract)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Installment_Payment_Method)
-            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Payment_Period)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
             </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Deposit)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Loan_Amount)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Taken)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Remain)
-            </th>
+
             <th>
                 @Html.DisplayNameFor(model => model.Status)
             </th>
@@ -67,66 +50,54 @@
             </th>
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Installment_Contract_Code)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer_Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Year_Of_Birth)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SSN)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Customer_Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Mobile)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Date_Of_Contract)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Installment_Payment_Method)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Payment_Period)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Price)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Deposit)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Loan_Amount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Taken)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Remain)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Status)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Property.Property_Code)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID }) |
-                @Html.ActionLink("Print", "Print", new { id = item.ID })
-            </td>
-        </tr>
-    }
-    
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Installment_Contract_Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer_Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year_Of_Birth)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SSN)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Customer_Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mobile)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date_Of_Contract)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Payment_Period)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Property.Property_Code)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID }) |
+                    @Html.ActionLink("Print", "Print", new { id = item.ID })
+                </td>
+            </tr>
+        }
+
     </table>
 </body>
-</html>
+
