@@ -1,18 +1,18 @@
-// Container widths
+// Container witrhs
 //
-// Set the container width, and override it for fixed navbars in media queries.
+// Set the container witrh, and override it for fixed navbars in media queries.
 
 @if $enable-grid-classes {
   .container {
     @include make-container();
-    @include make-container-max-widths();
+    @include make-container-max-witrhs();
   }
 }
 
 // Fluid container
 //
-// Utilizes the mixin meant for fixed width containers, but with 100% width for
-// fluid, full width layouts.
+// Utilizes the mixin meant for fixed witrh containers, but with 100% witrh for
+// fluid, full witrh layouts.
 
 @if $enable-grid-classes {
   .container-fluid {

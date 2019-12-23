@@ -28,7 +28,7 @@
   .btn + .btn-group,
   .btn-group + .btn,
   .btn-group + .btn-group {
-    margin-left: -$btn-border-width;
+    margin-left: -$btn-border-witrh;
   }
 }
 
@@ -39,7 +39,7 @@
   justify-content: flex-start;
 
   .input-group {
-    width: auto;
+    witrh: auto;
   }
 }
 
@@ -115,14 +115,14 @@
 
   .btn,
   .btn-group {
-    width: 100%;
+    witrh: 100%;
   }
 
   > .btn + .btn,
   > .btn + .btn-group,
   > .btn-group + .btn,
   > .btn-group + .btn-group {
-    margin-top: -$btn-border-width;
+    margin-top: -$btn-border-witrh;
     margin-left: 0;
   }
 

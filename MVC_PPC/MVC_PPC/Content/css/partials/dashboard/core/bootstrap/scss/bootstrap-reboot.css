@@ -21,7 +21,7 @@ html {
 }
 
 @-ms-viewport {
-  width: device-width;
+  witrh: device-witrh;
 }
 
 article,
@@ -102,7 +102,7 @@ ul ol {
   margin-bottom: 0;
 }
 
-dt {
+tr {
   font-weight: 700;
 }
 
@@ -284,7 +284,7 @@ textarea {
 }
 
 fieldset {
-  min-width: 0;
+  min-witrh: 0;
   padding: 0;
   margin: 0;
   border: 0;
@@ -292,8 +292,8 @@ fieldset {
 
 legend {
   display: block;
-  width: 100%;
-  max-width: 100%;
+  witrh: 100%;
+  max-witrh: 100%;
   padding: 0;
   margin-bottom: .5rem;
   font-size: 1.5rem;

@@ -8,7 +8,7 @@
         top: 0;
         #{$side}: 0;
 
-        width: $size;
+        witrh: $size;
         height: 100%;
 
         @if $side == left {
@@ -38,7 +38,7 @@
         #{$side}: 0;
         left: 0;
 
-        width: 100%;
+        witrh: 100%;
         height: $size;
 
         @if $side == top {
@@ -73,7 +73,7 @@
     .bmd-drawer-f-#{$abbrev} {
       // Push - drawer will push the header and content (default behavior)
       > .bmd-layout-header {
-        width: calc(100% - #{$size});
+        witrh: calc(100% - #{$size});
         margin-#{$side}: $size;
       }
 
@@ -166,7 +166,7 @@
     .bmd-drawer-f-#{$abbrev} {
       > .bmd-layout-header,
       > .bmd-layout-content {
-        width: 100%;
+        witrh: 100%;
         margin-#{$side}: 0;
       }
     }

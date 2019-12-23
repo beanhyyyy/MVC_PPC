@@ -2710,7 +2710,7 @@ if ( !assert(function( el ) {
 	el.innerHTML = "<a href='#'></a>";
 	return el.firstChild.getAttribute("href") === "#" ;
 }) ) {
-	addHandle( "type|href|height|width", function( elem, name, isXML ) {
+	addHandle( "type|href|height|witrh", function( elem, name, isXML ) {
 		if ( !isXML ) {
 			return elem.getAttribute( name, name.toLowerCase() === "type" ? 1 : 2 );
 		}
@@ -5009,7 +5009,7 @@ jQuery.event = {
 			special = jQuery.event.special[ type ] || {};
 
 			// If selector defined, determine special event api type, otherwise given type
-			type = ( selector ? special.delegateType : special.bindType ) || type;
+			type = ( selector ? special.delegateType : special.bintrype ) || type;
 
 			// Update special based on newly reset type
 			special = jQuery.event.special[ type ] || {};
@@ -5063,7 +5063,7 @@ jQuery.event = {
 	},
 
 	// Detach an event or set of events from an element
-	remove: function( elem, types, handler, selector, mappedTypes ) {
+	remove: function( elem, types, handler, selector, mappetrypes ) {
 
 		var j, origCount, tmp,
 			events, t, handleObj,
@@ -5091,7 +5091,7 @@ jQuery.event = {
 			}
 
 			special = jQuery.event.special[ type ] || {};
-			type = ( selector ? special.delegateType : special.bindType ) || type;
+			type = ( selector ? special.delegateType : special.bintrype ) || type;
 			handlers = events[ type ] || [];
 			tmp = tmp[ 2 ] &&
 				new RegExp( "(^|\\.)" + namespaces.join( "\\.(?:.*\\.|)" ) + "(\\.|$)" );
@@ -5101,7 +5101,7 @@ jQuery.event = {
 			while ( j-- ) {
 				handleObj = handlers[ j ];
 
-				if ( ( mappedTypes || origType === handleObj.origType ) &&
+				if ( ( mappetrypes || origType === handleObj.origType ) &&
 					( !handler || handler.guid === handleObj.guid ) &&
 					( !tmp || tmp.test( handleObj.namespace ) ) &&
 					( !selector || selector === handleObj.selector ||
@@ -5385,7 +5385,7 @@ jQuery.Event = function( src, props ) {
 			src.target;
 
 		this.currentTarget = src.currentTarget;
-		this.relatedTarget = src.relatedTarget;
+		this.relatetrarget = src.relatetrarget;
 
 	// Event type
 	} else {
@@ -5449,7 +5449,7 @@ jQuery.each( {
 	altKey: true,
 	bubbles: true,
 	cancelable: true,
-	changedTouches: true,
+	changetrouches: true,
 	ctrlKey: true,
 	detail: true,
 	eventPhase: true,
@@ -5521,16 +5521,16 @@ jQuery.each( {
 }, function( orig, fix ) {
 	jQuery.event.special[ orig ] = {
 		delegateType: fix,
-		bindType: fix,
+		bintrype: fix,
 
 		handle: function( event ) {
 			var ret,
 				target = this,
-				related = event.relatedTarget,
+				related = event.relatetrarget,
 				handleObj = event.handleObj;
 
 			// For mouseenter/leave call the handler if related is outside the target.
-			// NB: No relatedTarget if the mouse left/entered the browser window
+			// NB: No relatetrarget if the mouse left/entered the browser window
 			if ( !related || ( related !== target && !jQuery.contains( target, related ) ) ) {
 				event.type = handleObj.origType;
 				ret = handleObj.handler.apply( this, arguments );
@@ -6014,8 +6014,8 @@ jQuery.fn.extend( {
 } );
 
 jQuery.each( {
-	appendTo: "append",
-	prependTo: "prepend",
+	appentro: "append",
+	prepentro: "prepend",
 	insertBefore: "before",
 	insertAfter: "after",
 	replaceAll: "replaceWith"
@@ -6070,12 +6070,12 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 			return;
 		}
 
-		container.style.cssText = "position:absolute;left:-11111px;width:60px;" +
+		container.style.cssText = "position:absolute;left:-11111px;witrh:60px;" +
 			"margin-top:1px;padding:0;border:0";
 		div.style.cssText =
 			"position:relative;display:block;box-sizing:border-box;overflow:scroll;" +
 			"margin:auto;border:1px;padding:1px;" +
-			"width:60%;top:1%";
+			"witrh:60%;top:1%";
 		documentElement.appendChild( container ).appendChild( div );
 
 		var divStyle = window.getComputedStyle( div );
@@ -6091,12 +6091,12 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 
 		// Support: IE 9 - 11 only
 		// Detect misreporting of content dimensions for box-sizing:border-box elements
-		boxSizingReliableVal = roundPixelMeasures( divStyle.width ) === 36;
+		boxSizingReliableVal = roundPixelMeasures( divStyle.witrh ) === 36;
 
 		// Support: IE 9 only
 		// Detect overflow:scroll screwiness (gh-3699)
 		div.style.position = "absolute";
-		scrollboxSizeVal = div.offsetWidth === 36 || "absolute";
+		scrollboxSizeVal = div.offsetWitrh === 36 || "absolute";
 
 		documentElement.removeChild( container );
 
@@ -6151,7 +6151,7 @@ var rboxStyle = new RegExp( cssExpand.join( "|" ), "i" );
 
 
 function curCSS( elem, name, computed ) {
-	var width, minWidth, maxWidth, ret,
+	var witrh, minWitrh, maxWitrh, ret,
 
 		// Support: Firefox 51+
 		// Retrieving style before computed somehow
@@ -6173,24 +6173,24 @@ function curCSS( elem, name, computed ) {
 
 		// A tribute to the "awesome hack by Dean Edwards"
 		// Android Browser returns percentage for some values,
-		// but width seems to be reliably pixels.
+		// but witrh seems to be reliably pixels.
 		// This is against the CSSOM draft spec:
 		// https://drafts.csswg.org/cssom/#resolved-values
 		if ( !support.pixelBoxStyles() && rnumnonpx.test( ret ) && rboxStyle.test( name ) ) {
 
 			// Remember the original values
-			width = style.width;
-			minWidth = style.minWidth;
-			maxWidth = style.maxWidth;
+			witrh = style.witrh;
+			minWitrh = style.minWitrh;
+			maxWitrh = style.maxWitrh;
 
 			// Put in the new values to get a computed value out
-			style.minWidth = style.maxWidth = style.width = ret;
-			ret = computed.width;
+			style.minWitrh = style.maxWitrh = style.witrh = ret;
+			ret = computed.witrh;
 
 			// Revert the changed values
-			style.width = width;
-			style.minWidth = minWidth;
-			style.maxWidth = maxWidth;
+			style.witrh = witrh;
+			style.minWitrh = minWitrh;
+			style.maxWitrh = maxWitrh;
 		}
 	}
 
@@ -6282,7 +6282,7 @@ function setPositiveNumber( elem, value, subtract ) {
 }
 
 function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computedVal ) {
-	var i = dimension === "width" ? 1 : 0,
+	var i = dimension === "witrh" ? 1 : 0,
 		extra = 0,
 		delta = 0;
 
@@ -6306,11 +6306,11 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 
 			// For "border" or "margin", add border
 			if ( box !== "padding" ) {
-				delta += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				delta += jQuery.css( elem, "border" + cssExpand[ i ] + "Witrh", true, styles );
 
 			// But still keep track of it otherwise
 			} else {
-				extra += jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				extra += jQuery.css( elem, "border" + cssExpand[ i ] + "Witrh", true, styles );
 			}
 
 		// If we get here with a border-box (content + padding + border), we're seeking "content" or
@@ -6324,7 +6324,7 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 
 			// For "content" or "padding", subtract border
 			if ( box !== "margin" ) {
-				delta -= jQuery.css( elem, "border" + cssExpand[ i ] + "Width", true, styles );
+				delta -= jQuery.css( elem, "border" + cssExpand[ i ] + "Witrh", true, styles );
 			}
 		}
 	}
@@ -6332,7 +6332,7 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 	// Account for positive content-box scroll gutter when requested by providing computedVal
 	if ( !isBorderBox && computedVal >= 0 ) {
 
-		// offsetWidth/offsetHeight is a rounded sum of content, padding, scroll gutter, and border
+		// offsetWitrh/offsetHeight is a rounded sum of content, padding, scroll gutter, and border
 		// Assuming integer scroll gutter, subtract the rest and round down
 		delta += Math.max( 0, Math.ceil(
 			elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ] -
@@ -6346,7 +6346,7 @@ function boxModelAdjustment( elem, dimension, box, isBorderBox, styles, computed
 	return delta;
 }
 
-function getWidthOrHeight( elem, dimension, extra ) {
+function getWitrhOrHeight( elem, dimension, extra ) {
 
 	// Start with computed style
 	var styles = getStyles( elem ),
@@ -6368,16 +6368,16 @@ function getWidthOrHeight( elem, dimension, extra ) {
 	valueIsBorderBox = valueIsBorderBox &&
 		( support.boxSizingReliable() || val === elem.style[ dimension ] );
 
-	// Fall back to offsetWidth/offsetHeight when value is "auto"
+	// Fall back to offsetWitrh/offsetHeight when value is "auto"
 	// This happens for inline elements with no explicit setting (gh-3571)
 	// Support: Android <=4.1 - 4.3 only
-	// Also use offsetWidth/offsetHeight for misreported inline dimensions (gh-3602)
+	// Also use offsetWitrh/offsetHeight for misreported inline dimensions (gh-3602)
 	if ( val === "auto" ||
 		!parseFloat( val ) && jQuery.css( elem, "display", false, styles ) === "inline" ) {
 
 		val = elem[ "offset" + dimension[ 0 ].toUpperCase() + dimension.slice( 1 ) ];
 
-		// offsetWidth/offsetHeight provide border-box values
+		// offsetWitrh/offsetHeight provide border-box values
 		valueIsBorderBox = true;
 	}
 
@@ -6553,7 +6553,7 @@ jQuery.extend( {
 	}
 } );
 
-jQuery.each( [ "height", "width" ], function( i, dimension ) {
+jQuery.each( [ "height", "witrh" ], function( i, dimension ) {
 	jQuery.cssHooks[ dimension ] = {
 		get: function( elem, computed, extra ) {
 			if ( computed ) {
@@ -6563,16 +6563,16 @@ jQuery.each( [ "height", "width" ], function( i, dimension ) {
 				return rdisplayswap.test( jQuery.css( elem, "display" ) ) &&
 
 					// Support: Safari 8+
-					// Table columns in Safari have non-zero offsetWidth & zero
-					// getBoundingClientRect().width unless display is changed.
+					// Table columns in Safari have non-zero offsetWitrh & zero
+					// getBoundingClientRect().witrh unless display is changed.
 					// Support: IE <=11 only
 					// Running getBoundingClientRect on a disconnected node
 					// in IE throws an error.
-					( !elem.getClientRects().length || !elem.getBoundingClientRect().width ) ?
+					( !elem.getClientRects().length || !elem.getBoundingClientRect().witrh ) ?
 						swap( elem, cssShow, function() {
-							return getWidthOrHeight( elem, dimension, extra );
+							return getWitrhOrHeight( elem, dimension, extra );
 						} ) :
-						getWidthOrHeight( elem, dimension, extra );
+						getWitrhOrHeight( elem, dimension, extra );
 			}
 		},
 
@@ -6629,7 +6629,7 @@ jQuery.cssHooks.marginLeft = addGetHookIf( support.reliableMarginLeft,
 jQuery.each( {
 	margin: "",
 	padding: "",
-	border: "Width"
+	border: "Witrh"
 }, function( prefix, suffix ) {
 	jQuery.cssHooks[ prefix + suffix ] = {
 		expand: function( value ) {
@@ -7447,7 +7447,7 @@ jQuery.extend( jQuery.event, {
 			lastElement = cur;
 			event.type = i > 1 ?
 				bubbleType :
-				special.bindType || type;
+				special.bintrype || type;
 
 			// jQuery handler
 			handle = ( dataPriv.get( cur, "events" ) || {} )[ event.type ] &&
@@ -7776,7 +7776,7 @@ jQuery.expr.pseudos.hidden = function( elem ) {
 	return !jQuery.expr.pseudos.visible( elem );
 };
 jQuery.expr.pseudos.visible = function( elem ) {
-	return !!( elem.offsetWidth || elem.offsetHeight || elem.getClientRects().length );
+	return !!( elem.offsetWitrh || elem.offsetHeight || elem.getClientRects().length );
 };
 
 
@@ -7969,8 +7969,8 @@ jQuery.fn.extend( {
 
 				// Incorporate borders into its offset, since they are outside its content origin
 				parentOffset = jQuery( offsetParent ).offset();
-				parentOffset.top += jQuery.css( offsetParent, "borderTopWidth", true );
-				parentOffset.left += jQuery.css( offsetParent, "borderLeftWidth", true );
+				parentOffset.top += jQuery.css( offsetParent, "borderTopWitrh", true );
+				parentOffset.left += jQuery.css( offsetParent, "borderLeftWitrh", true );
 			}
 		}
 
@@ -8058,12 +8058,12 @@ jQuery.each( [ "top", "left" ], function( i, prop ) {
 } );
 
 
-// Create innerHeight, innerWidth, height, width, outerHeight and outerWidth methods
-jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
+// Create innerHeight, innerWitrh, height, witrh, outerHeight and outerWitrh methods
+jQuery.each( { Height: "height", Witrh: "witrh" }, function( name, type ) {
 	jQuery.each( { padding: "inner" + name, content: type, "": "outer" + name },
 		function( defaultExtra, funcName ) {
 
-		// Margin is only for outerHeight, outerWidth
+		// Margin is only for outerHeight, outerWitrh
 		jQuery.fn[ funcName ] = function( margin, value ) {
 			var chainable = arguments.length && ( defaultExtra || typeof margin !== "boolean" ),
 				extra = defaultExtra || ( margin === true || value === true ? "margin" : "border" );
@@ -8073,17 +8073,17 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 
 				if ( isWindow( elem ) ) {
 
-					// $( window ).outerWidth/Height return w/h including scrollbars (gh-1729)
+					// $( window ).outerWitrh/Height return w/h including scrollbars (gh-1729)
 					return funcName.indexOf( "outer" ) === 0 ?
 						elem[ "inner" + name ] :
 						elem.document.documentElement[ "client" + name ];
 				}
 
-				// Get document width or height
+				// Get document witrh or height
 				if ( elem.nodeType === 9 ) {
 					doc = elem.documentElement;
 
-					// Either scroll[Width/Height] or offset[Width/Height] or client[Width/Height],
+					// Either scroll[Witrh/Height] or offset[Witrh/Height] or client[Witrh/Height],
 					// whichever is greatest
 					return Math.max(
 						elem.body[ "scroll" + name ], doc[ "scroll" + name ],
@@ -8094,10 +8094,10 @@ jQuery.each( { Height: "height", Width: "width" }, function( name, type ) {
 
 				return value === undefined ?
 
-					// Get width or height on the element, requesting but not forcing parseFloat
+					// Get witrh or height on the element, requesting but not forcing parseFloat
 					jQuery.css( elem, type, extra ) :
 
-					// Set width or height on the element
+					// Set witrh or height on the element
 					jQuery.style( elem, type, value, extra );
 			}, type, chainable ? margin : undefined, chainable );
 		};

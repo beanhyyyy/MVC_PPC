@@ -183,7 +183,7 @@
     <Compile Include="Controllers\Installment_ContractController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
-    <Compile Include="Controllers\PropertiesController.cs" />
+    <Compile Include="Controllers\Properties1Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -682,11 +682,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Properties\Create.cshtml" />
-    <Content Include="Views\Properties\Delete.cshtml" />
-    <Content Include="Views\Properties\Details.cshtml" />
-    <Content Include="Views\Properties\Edit.cshtml" />
-    <Content Include="Views\Properties\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
     <Content Include="Views\Full_Contract\Create.cshtml" />
     <Content Include="Views\Full_Contract\Delete.cshtml" />
@@ -702,6 +697,11 @@
     <Content Include="Views\Installment_Contract\Print.cshtml" />
     <Content Include="Views\Auth\Login.cshtml" />
     <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Properties1\Create.cshtml" />
+    <Content Include="Views\Properties1\Delete.cshtml" />
+    <Content Include="Views\Properties1\Details.cshtml" />
+    <Content Include="Views\Properties1\Edit.cshtml" />
+    <Content Include="Views\Properties1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

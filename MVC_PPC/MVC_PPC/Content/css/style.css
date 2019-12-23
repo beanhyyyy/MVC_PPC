@@ -271,12 +271,12 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-feature {
   text-align: left;
-  width: 100%;
+  witrh: 100%;
   float: left;
 }
 .fh5co-feature .fh5co-icon {
   float: left;
-  width: 10%;
+  witrh: 10%;
   display: block;
   margin-top: 5px;
 }
@@ -286,16 +286,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-feature .fh5co-text {
   float: right;
-  width: 82%;
+  witrh: 82%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-feature .fh5co-text {
-    width: 82%;
+    witrh: 82%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-witrh: 480px) {
   .fh5co-feature .fh5co-text {
-    width: 72%;
+    witrh: 72%;
   }
 }
 .fh5co-feature .fh5co-text h2, .fh5co-feature .fh5co-text h3 {
@@ -315,17 +315,17 @@ h1, h2, h3, h4, h5, h6, figure {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-witrh: 480px) {
   .col-xxs-12 {
     float: none;
-    width: 100%;
+    witrh: 100%;
   }
 }
 
 .row-bottom-padded-lg {
   padding-bottom: 7em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .row-bottom-padded-lg {
     padding-bottom: 1em;
   }
@@ -334,7 +334,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .row-bottom-padded-md {
   padding-bottom: 4em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .row-bottom-padded-md {
     padding-bottom: 1em;
   }
@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .row-bottom-padded-sm {
   padding-bottom: 1em;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .row-bottom-padded-sm {
     padding-bottom: 1em;
   }
@@ -352,11 +352,11 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header {
   position: absolute;
   z-index: 1001;
-  width: 100%;
+  witrh: 100%;
   margin: 0px 0 0 0;
   background: rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-header {
     margin: 0px 0 0 0;
   }
@@ -366,7 +366,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-left: 20px;
   padding-right: 20px;
   float: left;
-  width: 100%;
+  witrh: 100%;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
   padding: 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-header nav {
     display: none;
   }
@@ -419,7 +419,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header nav ul li.call {
   margin-left: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-witrh: 992px) {
   #fh5co-header nav ul li.call {
     margin-left: 0px;
   }
@@ -481,7 +481,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-header nav ul li.cta {
   margin-left: 20px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-witrh: 992px) {
   #fh5co-header nav ul li.cta {
     margin-left: 0px;
   }
@@ -543,7 +543,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-hero .flexslider .flex-control-nav li a {
   background: rgba(255, 255, 255, 0.3);
   box-shadow: none;
-  width: 12px;
+  witrh: 12px;
   height: 12px;
   cursor: pointer;
 }
@@ -558,16 +558,16 @@ h1, h2, h3, h4, h5, h6, figure {
   display: table;
   opaCity_Name: 0;
   min-height: 700px;
-  width: 100%;
+  witrh: 100%;
 }
 #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner {
   display: table-cell;
   vertical-align: middle;
   min-height: 700px;
-  width: 100%;
+  witrh: 100%;
 }
 #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box {
-  width: 40%;
+  witrh: 40%;
   background: rgba(255, 255, 255, 0.9);
   padding: 30px;
   color: #fff;
@@ -579,9 +579,9 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box {
-    width: 100%;
+    witrh: 100%;
   }
 }
 #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box .fh5co-property-specification {
@@ -646,14 +646,14 @@ h1, h2, h3, h4, h5, h6, figure {
   border: solid transparent;
   content: " ";
   height: 0;
-  width: 0;
+  witrh: 0;
   position: absolute;
   pointer-events: none;
 }
 #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box .price-status .price .tag:after {
   border-color: rgba(136, 183, 213, 0);
   border-right-color: #4CB648;
-  border-width: 13px;
+  border-witrh: 13px;
   margin-top: -13px;
 }
 #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box .price-status .price .tag:hover, #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box .price-status .price .tag:active, #fh5co-hero .flexslider .fh5co-property-brief .fh5co-property-brief-inner .fh5co-box .price-status .price .tag:focus {
@@ -673,7 +673,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #best-deal, .fh5co-services {
   padding: 7em 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #best-deal, .fh5co-services {
     padding: 3em 0;
   }
@@ -687,7 +687,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 30px;
 }
 #best-deal .item-block .icon img, .fh5co-services .item-block .icon img {
-  max-width: inherit;
+  max-witrh: inherit;
   height: 90px;
   margin: 0 auto;
 }
@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(255, 255, 255, 0.9);
   position: absolute;
   z-index: 1001;
-  width: 40%;
+  witrh: 40%;
   right: 10%;
   top: 50%;
   -webkit-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
@@ -731,21 +731,21 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
   box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-witrh: 992px) {
   .fh5co-section-with-image .fh5co-box {
     position: relative;
     right: auto;
     bottom: auto;
-    width: 100%;
+    witrh: 100%;
     margin-top: auto !important;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-witrh: 480px) {
   .fh5co-section-with-image .fh5co-box {
     position: relative;
     right: auto;
     bottom: auto;
-    width: 100%;
+    witrh: 100%;
     padding: 15px;
   }
 }
@@ -753,7 +753,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 50px;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-section-with-image h2 {
     font-size: 32px;
   }
@@ -761,7 +761,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-section-with-image p {
   font-size: 20px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-section-with-image p {
     font-size: 16px;
   }
@@ -773,7 +773,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-property {
   background: #fff;
   text-align: left;
-  width: 100%;
+  witrh: 100%;
   float: left;
   -webkit-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.5);
@@ -847,7 +847,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #fff;
   padding: 7em 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-testimonial,
   #fh5co-agents {
     padding: 3em 0;
@@ -865,7 +865,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 20px 20px 20px 20px;
   background: #fff;
   float: left;
-  width: 100%;
+  witrh: 100%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -915,7 +915,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 4px 11px 35px -14px rgba(0, 0, 0, 0.3);
 }
 #fh5co-agents .fh5co-agent figure img {
-  width: 150px;
+  witrh: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -940,7 +940,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-contact {
   padding: 7em 0;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-about,
   .fh5co-team,
   .fh5co-contact {
@@ -971,14 +971,14 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #map {
   height: 500px;
-  width: 100%;
+  witrh: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #map {
     height: 400px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-witrh: 480px) {
   #map {
     height: 200px;
   }
@@ -1006,9 +1006,9 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #ecf1f5;
   padding: 7em 0 0px 0;
   float: left;
-  width: 100%;
+  witrh: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products {
     padding: 3em 0 10px 0;
   }
@@ -1016,7 +1016,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-grid-products .v-align {
   display: table;
   height: 100%;
-  width: 100%;
+  witrh: 100%;
   background: rgba(0, 0, 0, 0.1);
   position: relative;
   -webkit-transition: 0.5s;
@@ -1039,17 +1039,17 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-grid-products .col-1, #fh5co-grid-products .col-2 {
   float: left;
-  width: 50%;
+  witrh: 50%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .col-1, #fh5co-grid-products .col-2 {
-    width: 100%;
+    witrh: 100%;
   }
 }
 #fh5co-grid-products .col-1 {
   border-right: 5px solid #ecf1f5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .col-1 {
     border-right: none;
   }
@@ -1059,7 +1059,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-right: none !important;
   border-left: 5px solid #ecf1f5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .col-1.reverse {
     border-left: none;
   }
@@ -1068,7 +1068,7 @@ h1, h2, h3, h4, h5, h6, figure {
   float: right;
   border-left: 5px solid #ecf1f5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .col-2 {
     border-left: none;
   }
@@ -1078,13 +1078,13 @@ h1, h2, h3, h4, h5, h6, figure {
   border-left: none !important;
   border-right: 5px solid #ecf1f5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .col-2.reverse {
     border-right: none;
   }
 }
 #fh5co-grid-products .item-grid {
-  width: 100%;
+  witrh: 100%;
   float: left;
   background-size: cover;
   background-position: center center;
@@ -1126,7 +1126,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-grid-products .item-grid .icon {
   display: block;
   background: #fff;
-  width: 90px;
+  witrh: 90px;
   height: 90px;
   margin: 0 auto 30px auto;
   padding-top: 19px;
@@ -1136,14 +1136,14 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 50%;
 }
 #fh5co-grid-products .item-grid .icon img {
-  max-width: inherit;
+  max-witrh: inherit;
   height: 50px;
   margin: 0 auto;
 }
 #fh5co-grid-products .one, #fh5co-grid-products .three {
   height: 450px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .one, #fh5co-grid-products .three {
     height: 450px;
   }
@@ -1151,7 +1151,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-grid-products .two {
   height: 900px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .two {
     height: 450px;
     border-top: 5px solid #ecf1f5;
@@ -1164,7 +1164,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-grid-products .three {
   border-top: 5px solid #ecf1f5;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-grid-products .three {
     border-bottom: 5px solid #ecf1f5;
   }
@@ -1176,7 +1176,7 @@ h1, h2, h3, h4, h5, h6, figure {
   clear: both;
   background: #f7f7f7;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-blog {
     padding: 3em 0;
   }
@@ -1192,7 +1192,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.5s;
 }
 #fh5co-blog .fh5co-entry figure img {
-  max-width: 100%;
+  max-witrh: 100%;
 }
 #fh5co-blog .fh5co-entry .fh5co-date {
   display: block;
@@ -1243,7 +1243,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   position: relative;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-cta, .fh5co-page-title {
     padding: 3em 0;
   }
@@ -1274,7 +1274,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-page-title {
   padding: 10em 0 5em 0 !important;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-page-title {
     padding: 6em 0 1em 0 !important;
   }
@@ -1292,11 +1292,11 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer {
   padding: 7em 0;
   float: left;
-  width: 100%;
+  witrh: 100%;
   position: relative;
   background: #333333;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-footer {
     padding: 3em 0;
   }
@@ -1356,7 +1356,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-border-radius: 50% !important;
   border-radius: 50% !important;
   height: 50px;
-  width: 50px;
+  witrh: 50px;
   line-height: 50px;
   display: table-cell;
   vertical-align: middle;
@@ -1391,7 +1391,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-copyright span {
   display: block;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-witrh: 480px) {
   .fh5co-copyright {
     text-align: left !important;
   }
@@ -1438,11 +1438,11 @@ h1, h2, h3, h4, h5, h6, figure {
   position: fixed;
   z-index: 1;
   top: 0;
-  width: 275px;
+  witrh: 275px;
   background: black;
   padding: 30px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   #fh5co-offcanvas {
     display: block;
   }
@@ -1513,7 +1513,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  width: 30px;
+  witrh: 30px;
   height: 2px;
   color: #fff;
   font: bold 14px/.4 Helvetica;
@@ -1524,7 +1524,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-nav-toggle i::before, .fh5co-nav-toggle i::after {
   content: '';
-  width: 30px;
+  witrh: 30px;
   height: 2px;
   background: #fff;
   position: absolute;
@@ -1594,7 +1594,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: none;
   cursor: pointer;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-nav-toggle {
     display: block;
     top: 20px;
@@ -1605,7 +1605,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 7em 0;
   background: #f7f7f7;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-witrh: 768px) {
   .fh5co-pricing {
     padding: 3em 0;
   }

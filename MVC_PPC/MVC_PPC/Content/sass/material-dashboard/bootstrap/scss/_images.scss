@@ -14,7 +14,7 @@
 .img-thumbnail {
   padding: $thumbnail-padding;
   background-color: $thumbnail-bg;
-  border: $thumbnail-border-width solid $thumbnail-border-color;
+  border: $thumbnail-border-witrh solid $thumbnail-border-color;
   @include border-radius($thumbnail-border-radius);
   @include box-shadow($thumbnail-box-shadow);
 

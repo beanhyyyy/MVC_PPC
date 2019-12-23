@@ -64,7 +64,7 @@
     onClose: null,
     onClosed: null,
     icon_type: 'class',
-    template: '<div data-notify="container" class="col-11 col-md-4 alert alert-{0}" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="material-icons">close</i></button><i data-notify="icon" class="material-icons"></i><span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>'
+    template: '<div data-notify="container" class="col-11 col-md-4 alert alert-{0}" role="alert"><button type="button" aria-hidden="true" class="close" data-notify="dismiss"><i class="material-icons">close</i></button><i data-notify="icon" class="material-icons"></i><span data-notify="title">{1}</span> <span data-notify="message">{2}</span><div class="progress" data-notify="progressbar"><div class="progress-bar progress-bar-{0}" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="witrh: 0%;"></div></div><a href="{3}" target="{4}" data-notify="url"></a></div>'
   };
 
   String.format = function() {
@@ -182,7 +182,7 @@
               case "progress":
                 var newDelay = self.settings.delay - (self.settings.delay * (commands[cmd] / 100));
                 this.$ele.data('notify-delay', newDelay);
-                this.$ele.find('[data-notify="progressbar"] > div').attr('aria-valuenow', commands[cmd]).css('width', commands[cmd] + '%');
+                this.$ele.find('[data-notify="progressbar"] > div').attr('aria-valuenow', commands[cmd]).css('witrh', commands[cmd] + '%');
                 break;
               case "url":
                 this.$ele.find('[data-notify="url"]').attr('href', commands[cmd]);
@@ -244,7 +244,7 @@
         left: 0,
         position: 'absolute',
         top: 0,
-        width: '100%',
+        witrh: '100%',
         zIndex: this.settings.z_index + 1
       });
     },
@@ -332,7 +332,7 @@
           if ((self.$ele.data('data-hover') === 'false' && self.settings.mouse_over === "pause") || self.settings.mouse_over != "pause") {
             var percent = ((self.settings.delay - delay) / self.settings.delay) * 100;
             self.$ele.data('notify-delay', delay);
-            self.$ele.find('[data-notify="progressbar"] > div').attr('aria-valuenow', percent).css('width', percent + '%');
+            self.$ele.find('[data-notify="progressbar"] > div').attr('aria-valuenow', percent).css('witrh', percent + '%');
           }
           if (delay <= -(self.settings.timer)) {
             clearInterval(timer);

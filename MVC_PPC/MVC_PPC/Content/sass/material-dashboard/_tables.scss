@@ -1,6 +1,6 @@
 .table{
    > thead > tr > th{
-       border-bottom-width: 1px;
+       border-bottom-witrh: 1px;
        font-size: $font-size-h5;
        font-weight: $font-weight-light;
    }
@@ -20,7 +20,7 @@
        margin-top: 0;
        margin-bottom: 0;
        padding: 0;
-       width: 15px;
+       witrh: 15px;
 
        .icons{
            position: relative;
@@ -29,7 +29,7 @@
 
    .flag {
       img {
-        max-width: 18px;
+        max-witrh: 18px;
         margin-top: -2px;
      }
    }
@@ -53,7 +53,7 @@
    }
 
    .th-description{
-       max-width: 150px;
+       max-witrh: 150px;
    }
    .td-price{
        font-size: 26px;
@@ -107,11 +107,11 @@
        font-size: $font-size-h4;
    }
     .td-name{
-        min-width: 200px;
+        min-witrh: 200px;
     }
     .td-number{
         text-align: right;
-        min-width: 150px;
+        min-witrh: 150px;
 
         small{
             margin-right: 3px;
@@ -119,13 +119,13 @@
     }
 
     .img-container{
-        width: 120px;
+        witrh: 120px;
         max-height: 160px;
         overflow: hidden;
         display: block;
 
         img{
-            width: 100%;
+            witrh: 100%;
         }
     }
 }
@@ -163,8 +163,8 @@
     font-size: $bmd-table-header-font-size;
     font-weight: 500;
 
-    border-top-width: 0;
-    border-bottom-width: $table-border-width;
+    border-top-witrh: 0;
+    border-bottom-witrh: $table-border-witrh;
   }
 }
 

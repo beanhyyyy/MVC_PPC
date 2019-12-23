@@ -84,8 +84,8 @@
       // see above for color variations
       font-size: $mdb-btn-fab-font-size;
       height: $mdb-btn-fab-size;
-      min-width: $mdb-btn-fab-size;
-      width: $mdb-btn-fab-size;
+      min-witrh: $mdb-btn-fab-size;
+      witrh: $mdb-btn-fab-size;
       // margin: auto;
       padding: 0;
       overflow: hidden;
@@ -100,8 +100,8 @@
       &.btn-sm,
       &.btn-fab-mini{
           height: $mdb-btn-fab-size-mini + 1;
-          min-width: $mdb-btn-fab-size-mini + 1;
-          width: $mdb-btn-fab-size-mini + 1;
+          min-witrh: $mdb-btn-fab-size-mini + 1;
+          witrh: $mdb-btn-fab-size-mini + 1;
 
           .material-icons,
           .fa{
@@ -113,8 +113,8 @@
       .btn-group-lg &,
       &.btn-lg{
           height: $mdb-btn-fab-size-lg + 1;
-          min-width: $mdb-btn-fab-size-lg + 1;
-          width: $mdb-btn-fab-size-lg + 1;
+          min-witrh: $mdb-btn-fab-size-lg + 1;
+          witrh: $mdb-btn-fab-size-lg + 1;
           line-height: $mdb-btn-fab-size-lg;
 
           .material-icons,
@@ -128,7 +128,7 @@
       .fa {
         margin-top: 0;
         position: absolute;
-        width: 100%;
+        witrh: 100%;
         transform: none;
         left: 0;
         top: 0;
@@ -144,8 +144,8 @@
     &.btn-lg{
         font-size: $mdb-btn-fab-font-size;
         height: $mdb-btn-fab-size;
-        min-width: $mdb-btn-fab-size;
-        width: $mdb-btn-fab-size;
+        min-witrh: $mdb-btn-fab-size;
+        witrh: $mdb-btn-fab-size;
     }
 }
 

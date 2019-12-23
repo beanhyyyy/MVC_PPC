@@ -11,7 +11,7 @@
   white-space: nowrap;
   vertical-align: middle;
   user-select: none;
-  border: $btn-border-width solid transparent;
+  border: $btn-border-witrh solid transparent;
   @include button-size($btn-padding-y, $btn-padding-x, $font-size-base, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 
@@ -125,7 +125,7 @@ fieldset:disabled a.btn {
 
 .btn-block {
   display: block;
-  width: 100%;
+  witrh: 100%;
 
   // Vertically space out multiple block buttons
   + .btn-block {
@@ -138,6 +138,6 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   &.btn-block {
-    width: 100%;
+    witrh: 100%;
   }
 }

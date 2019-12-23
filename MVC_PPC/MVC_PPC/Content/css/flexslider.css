@@ -49,7 +49,7 @@
   -webkit-backface-visibility: hidden;
 }
 .flexslider .slides img {
-  width: 100%;
+  witrh: 100%;
   display: block;
 }
 .flexslider .slides:after {
@@ -113,7 +113,7 @@ html[xmlns] .flexslider .slides {
 .flex-direction-nav a {
   text-decoration: none;
   display: block;
-  width: 40px;
+  witrh: 40px;
   height: 40px;
   margin: -20px 0 0;
   position: absolute;
@@ -170,7 +170,7 @@ html[xmlns] .flexslider .slides {
 }
 .flex-pauseplay a {
   display: block;
-  width: 20px;
+  witrh: 20px;
   height: 20px;
   position: absolute;
   bottom: 5px;
@@ -194,7 +194,7 @@ html[xmlns] .flexslider .slides {
   content: '\f003';
 }
 .flex-control-nav {
-  width: 100%;
+  witrh: 100%;
   position: absolute;
   bottom: -40px;
   text-align: center;
@@ -206,7 +206,7 @@ html[xmlns] .flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
+  witrh: 11px;
   height: 11px;
   display: block;
   background: #666;
@@ -236,12 +236,12 @@ html[xmlns] .flexslider .slides {
   overflow: hidden;
 }
 .flex-control-thumbs li {
-  width: 25%;
+  witrh: 25%;
   float: left;
   margin: 0;
 }
 .flex-control-thumbs img {
-  width: 100%;
+  witrh: 100%;
   height: auto;
   display: block;
   opaCity_Name: .7;
@@ -263,7 +263,7 @@ html[xmlns] .flexslider .slides {
 /* ====================================================================================================================
  * RESPONSIVE
  * ====================================================================================================================*/
-@media screen and (max-width: 860px) {
+@media screen and (max-witrh: 860px) {
   .flex-direction-nav .flex-prev {
     opaCity_Name: 1;
     left: 10px;

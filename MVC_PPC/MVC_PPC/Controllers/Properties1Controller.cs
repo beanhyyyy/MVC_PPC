@@ -11,32 +11,18 @@ using System.Transactions;
 
 namespace MVC_PPC.Controllers
 {
-    public class PropertiesController : Controller
+    public class Properties1Controller : Controller
     {
         private PPCDBEntities db = new PPCDBEntities();
 
-        // GET: Properties
-        public ActionResult Index(string searchString)
+        // GET: Properties1
+        public ActionResult Index()
         {
-            var properties = db.Properties.Include(p => p.District).Include(p => p.Property_Status).Include(p => p.Property_Type).ToList();
-
-            ViewBag.Message = TempData["StatusMessage"];
-
-            var links = from l in db.Properties
-                        select l;
-
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                links = links.Where(s => s.Property_Name.Contains(searchString));
-            }
-
-
-            return View(links);
+            var properties = db.Properties.Include(p => p.District).Include(p => p.Property_Status).Include(p => p.Property_Type);
+            return View(properties.ToList());
         }
 
-        
-
-        // GET: Properties/Details/5
+        // GET: Properties1/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -51,20 +37,16 @@ namespace MVC_PPC.Controllers
             return View(property);
         }
 
-        // GET: Properties/Create
+        // GET: Properties1/Create
         public ActionResult Create()
         {
-            
-            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
-            ViewBag.District_ID = new SelectList(db.Districts, "City_ID", "District_Name");
+            ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name");
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name");
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name");
             return View();
         }
 
-        
-
-        // POST: Properties/Create
+        // POST: Properties1/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -75,7 +57,7 @@ namespace MVC_PPC.Controllers
             {
                 using (var scope = new TransactionScope())
                 {
-                   
+
 
                     //Add model to database
                     db.Properties.Add(property);
@@ -91,13 +73,12 @@ namespace MVC_PPC.Controllers
                     TempData["StatusMessage"] = "Create successfully";
                     return RedirectToAction("Index");
                 }
-
             }
-            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
+
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
-            return View("Index");
+            return View(property);
         }
 
         public ActionResult Image(string id)
@@ -107,7 +88,7 @@ namespace MVC_PPC.Controllers
             return File(path, "image/*");
         }
 
-        // GET: Properties/Edit/5
+        // GET: Properties1/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -119,14 +100,13 @@ namespace MVC_PPC.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
             return View(property);
         }
 
-        // POST: Properties/Edit/5
+        // POST: Properties1/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
@@ -139,14 +119,13 @@ namespace MVC_PPC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.City_ID = new SelectList(db.Cities, "ID", "City_Name");
             ViewBag.District_ID = new SelectList(db.Districts, "ID", "District_Name", property.District_ID);
             ViewBag.Property_Status_ID = new SelectList(db.Property_Status, "ID", "Property_Status_Name", property.Property_Status_ID);
             ViewBag.Property_Type_ID = new SelectList(db.Property_Type, "ID", "Property_Type_Name", property.Property_Type_ID);
             return View(property);
         }
 
-        // GET: Properties/Delete/5
+        // GET: Properties1/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -161,7 +140,7 @@ namespace MVC_PPC.Controllers
             return View(property);
         }
 
-        // POST: Properties/Delete/5
+        // POST: Properties1/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
@@ -180,9 +159,5 @@ namespace MVC_PPC.Controllers
             }
             base.Dispose(disposing);
         }
-
-        
-
-
     }
 }

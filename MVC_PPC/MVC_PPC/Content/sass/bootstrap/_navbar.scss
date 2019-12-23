@@ -5,7 +5,7 @@
 
 // Wrapper and base class
 //
-// Provide a static navbar from which we expand to create full-width, fixed, and
+// Provide a static navbar from which we expand to create full-witrh, fixed, and
 // other navbar variations.
 
 .navbar {
@@ -17,7 +17,7 @@
   // Prevent floats from breaking the navbar
   @include clearfix;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     border-radius: $navbar-border-radius;
   }
 }
@@ -31,7 +31,7 @@
 .navbar-header {
   @include clearfix;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     float: left;
   }
 }
@@ -60,8 +60,8 @@
     overflow-y: auto;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
-    width: auto;
+  @media (min-witrh: $grid-float-breakpoint) {
+    witrh: auto;
     border-top: 0;
     box-shadow: none;
 
@@ -92,7 +92,7 @@
   .navbar-collapse {
     max-height: $navbar-collapse-max-height;
 
-    @media (max-device-width: $screen-xs-min) and (orientation: landscape) {
+    @media (max-device-witrh: $screen-xs-min) and (orientation: landscape) {
       max-height: 200px;
     }
   }
@@ -110,7 +110,7 @@
     margin-right: -$navbar-padding-horizontal;
     margin-left:  -$navbar-padding-horizontal;
 
-    @media (min-width: $grid-float-breakpoint) {
+    @media (min-witrh: $grid-float-breakpoint) {
       margin-right: 0;
       margin-left:  0;
     }
@@ -127,9 +127,9 @@
 // Static top (unfixed, but 100% wide) navbar
 .navbar-static-top {
   z-index: $zindex-navbar;
-  border-width: 0 0 1px;
+  border-witrh: 0 0 1px;
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     border-radius: 0;
   }
 }
@@ -143,18 +143,18 @@
   z-index: $zindex-navbar-fixed;
 
   // Undo the rounded corners
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     border-radius: 0;
   }
 }
 .navbar-fixed-top {
   top: 0;
-  border-width: 0 0 1px;
+  border-witrh: 0 0 1px;
 }
 .navbar-fixed-bottom {
   bottom: 0;
   margin-bottom: 0; // override .navbar defaults
-  border-width: 1px 0 0;
+  border-witrh: 1px 0 0;
 }
 
 
@@ -176,7 +176,7 @@
     display: block;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     .navbar > .container &,
     .navbar > .container-fluid & {
       margin-left: -$navbar-padding-horizontal;
@@ -210,7 +210,7 @@
   // Bars
   .icon-bar {
     display: block;
-    width: 22px;
+    witrh: 22px;
     height: 2px;
     border-radius: 1px;
   }
@@ -218,7 +218,7 @@
     margin-top: 4px;
   }
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     display: none;
   }
 }
@@ -238,12 +238,12 @@
     line-height: $line-height-computed;
   }
 
-  @media (max-width: $grid-float-breakpoint-max) {
+  @media (max-witrh: $grid-float-breakpoint-max) {
     // Dropdowns get custom display when collapsed
     .open .dropdown-menu {
       position: static;
       float: none;
-      width: auto;
+      witrh: auto;
       margin-top: 0;
       background-color: transparent;
       border: 0;
@@ -263,7 +263,7 @@
   }
 
   // Uncollapse the nav
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     float: left;
     margin: 0;
 
@@ -296,7 +296,7 @@
   @include form-inline;
 
   .form-group {
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-witrh: $grid-float-breakpoint-max) {
       margin-bottom: 5px;
 
       &:last-child {
@@ -308,9 +308,9 @@
   // Vertically center in expanded, horizontal navbar
   @include navbar-vertical-align($input-height-base);
 
-  // Undo 100% width for pull classes
-  @media (min-width: $grid-float-breakpoint) {
-    width: auto;
+  // Undo 100% witrh for pull classes
+  @media (min-witrh: $grid-float-breakpoint) {
+    witrh: auto;
     border: 0;
     margin-left: 0;
     margin-right: 0;
@@ -359,7 +359,7 @@
 .navbar-text {
   @include navbar-vertical-align($line-height-computed);
 
-  @media (min-width: $grid-float-breakpoint) {
+  @media (min-witrh: $grid-float-breakpoint) {
     float: left;
     margin-left: $navbar-padding-horizontal;
     margin-right: $navbar-padding-horizontal;
@@ -375,7 +375,7 @@
 //
 // Declared after the navbar components to ensure more specificity on the margins.
 
-@media (min-width: $grid-float-breakpoint) {
+@media (min-witrh: $grid-float-breakpoint) {
   .navbar-left {
     float: left !important;
   }
@@ -467,7 +467,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-witrh: $grid-float-breakpoint-max) {
       // Dropdowns get custom display when collapsed
       .open .dropdown-menu {
         > li > a {
@@ -601,7 +601,7 @@
       }
     }
 
-    @media (max-width: $grid-float-breakpoint-max) {
+    @media (max-witrh: $grid-float-breakpoint-max) {
       // Dropdowns get custom display
       .open .dropdown-menu {
         > .dropdown-header {

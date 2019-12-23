@@ -5,13 +5,13 @@
 
 // Responsive image
 //
-// Keep images from scaling beyond the width of their parents.
+// Keep images from scaling beyond the witrh of their parents.
 
 @mixin img-fluid {
   // Part 1: Set a maximum relative to the parent
-  max-width: 100%;
+  max-witrh: 100%;
   // Part 2: Override the height to auto, otherwise images will be stretched
-  // when setting a width and height attribute on the img element.
+  // when setting a witrh and height attribute on the img element.
   height: auto;
 }
 
@@ -21,7 +21,7 @@
 // Short retina mixin for setting background-image and -size.
 
 // stylelint-disable indentation, media-query-list-comma-newline-after
-@mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
+@mixin img-retina($file-1x, $file-2x, $witrh-1x, $height-1x) {
   background-image: url($file-1x);
 
   // Autoprefixer takes care of adding -webkit-min-device-pixel-ratio and -o-min-device-pixel-ratio,
@@ -31,6 +31,6 @@
   @media only screen and (min-resolution: 192dpi), // IE9-11 don't support dppx
   only screen and (min-resolution: 2dppx) { // Standardized
     background-image: url($file-2x);
-    background-size: $width-1x $height-1x;
+    background-size: $witrh-1x $height-1x;
   }
 }

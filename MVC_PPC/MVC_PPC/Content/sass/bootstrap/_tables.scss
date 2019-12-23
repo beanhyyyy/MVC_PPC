@@ -20,8 +20,8 @@ th {
 // Baseline styles
 
 .table {
-  width: 100%;
-  max-width: 100%;
+  witrh: 100%;
+  max-witrh: 100%;
   margin-bottom: $line-height-computed;
   // Cells
   > thead,
@@ -100,7 +100,7 @@ th {
   > thead > tr {
     > th,
     > td {
-      border-bottom-width: 2px;
+      border-bottom-witrh: 2px;
     }
   }
 }
@@ -172,8 +172,8 @@ table {
   overflow-x: auto;
   min-height: 0.01%; // Workaround for IE9 bug (see https://github.com/twbs/bootstrap/issues/14837)
 
-  @media screen and (max-width: $screen-xs-max) {
-    width: 100%;
+  @media screen and (max-witrh: $screen-xs-max) {
+    witrh: 100%;
     margin-bottom: ($line-height-computed * 0.75);
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;

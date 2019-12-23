@@ -31,13 +31,13 @@
     .circle {
         border: 1px solid $mdb-radio-color-off;
         height: 15px;
-        width: 15px;
+        witrh: 15px;
         border-radius: 100%;
         top: 1px;
 
         .check {
             height: 15px;
-            width: 15px;
+            witrh: 15px;
             border-radius: 100%;
             background-color: $mdb-radio-color-on;
             @include transform-scale3d(unquote('0,0,0'));
@@ -51,7 +51,7 @@
     .form-check-input {
         opacity: 0;
         height: 0;
-        width: 0;
+        witrh: 0;
         overflow: hidden;
 
 
@@ -101,7 +101,7 @@
         content: "";
         background-color: rgba(0, 0, 0, 0.84);
         height: 15px;
-        width: 15px;
+        witrh: 15px;
         border-radius: 100%;
         z-index: 1;
         opacity: 0;

@@ -3,7 +3,7 @@
     box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.2);
     border: none;
     line-height: 1.7;
-    max-width: 240px;
+    max-witrh: 240px;
 
     &.bs-popover-top .arrow:before,
     &.bs-popover-left .arrow:before,
@@ -77,7 +77,7 @@
 
 .tooltip-inner{
     padding: $padding-base-vertical $padding-base-horizontal;
-    min-width: 130px;
+    min-witrh: 130px;
     background-color: $white-color;
     font-size: $font-size-base;
     color: inherit;

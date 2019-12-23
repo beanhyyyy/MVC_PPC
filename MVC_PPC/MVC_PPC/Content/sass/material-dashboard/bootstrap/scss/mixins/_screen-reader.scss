@@ -5,7 +5,7 @@
 
 @mixin sr-only {
   position: absolute;
-  width: 1px;
+  witrh: 1px;
   height: 1px;
   padding: 0;
   overflow: hidden;
@@ -25,7 +25,7 @@
   &:active,
   &:focus {
     position: static;
-    width: auto;
+    witrh: auto;
     height: auto;
     overflow: visible;
     clip: auto;

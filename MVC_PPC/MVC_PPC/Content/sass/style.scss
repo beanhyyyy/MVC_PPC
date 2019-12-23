@@ -2,7 +2,7 @@ $font-primary: 'Varela Round', Arial, sans-serif;
 
 
 // Overrides
-$grid-gutter-width: 40px !default; 
+$grid-gutter-witrh: 40px !default; 
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
 
@@ -328,7 +328,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			padding: 2px;
 			@include inline-block;
 			@include border-radius(7px);
-			@media screen and (max-width: $screen-sm) {
+			@media screen and (max-witrh: $screen-sm) {
 			}
 			&:hover {
 				color: $brand-primary;
@@ -344,11 +344,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .fh5co-feature {
 	text-align: left;
-	width: 100%;
+	witrh: 100%;
 	float: left;
 	.fh5co-icon {
 		float: left;
-		width: 10%;
+		witrh: 10%;
 		display: block;
 		margin-top: 5px;
 		i {
@@ -358,12 +358,12 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.fh5co-text {
 		float: right;
-		width: 82%;
-		@media screen and (max-width: $screen-sm) {
-			width: 82%;
+		witrh: 82%;
+		@media screen and (max-witrh: $screen-sm) {
+			witrh: 82%;
 		}
-		@media screen and (max-width: $screen-xs) {
-			width: 72%;
+		@media screen and (max-witrh: $screen-xs) {
+			witrh: 72%;
 		}
 		h2, h3 {
 			margin: 0;
@@ -388,26 +388,26 @@ h1, h2, h3, h4, h5, h6, figure {
 
 // Helper Class
 .col-xxs-12 {
-	@media screen and (max-width: 480px) {
+	@media screen and (max-witrh: 480px) {
 		float: none;
-		width: 100%;
+		witrh: 100%;
 	}
 }
 .row-bottom-padded-lg {
 	padding-bottom: 7em;
-	@media screen and (max-width: $screen-sm ) {
+	@media screen and (max-witrh: $screen-sm ) {
 		padding-bottom: 1em;
 	}
 }
 .row-bottom-padded-md {
 	padding-bottom: 4em;
-	@media screen and (max-width: $screen-sm ) {
+	@media screen and (max-witrh: $screen-sm ) {
 		padding-bottom: 1em;
 	}	
 }
 .row-bottom-padded-sm {
 	padding-bottom: 1em;
-	@media screen and (max-width: $screen-sm ) {
+	@media screen and (max-witrh: $screen-sm ) {
 		padding-bottom: 1em;
 	}	
 }
@@ -417,10 +417,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	position: absolute;
 	z-index: 1001;
 	// position: relative;
-	width: 100%;
+	witrh: 100%;
 	margin: 0px 0 0 0;
 	background: rgba(0,0,0,.5);
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		margin: 0px 0 0 0;
 	}
 	.header-inner {
@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		padding-right: 20px;
 		// background: rgba(255, 255, 255, .8);
 		float: left;
-		width: 100%;
+		witrh: 100%;
 		@include border-radius(7px);
 	}
 	h1 {
@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	nav {
 		float: right;
 		padding: 0;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			display: none;
 		}
 		ul {
@@ -473,7 +473,7 @@ h1, h2, h3, h4, h5, h6, figure {
 
 				&.call {
 					margin-left: 20px;
-					@media screen and (max-width: $screen-md) {
+					@media screen and (max-witrh: $screen-md) {
 						margin-left: 0px;
 					}
 					a {
@@ -537,7 +537,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				}
 				&.cta {
 					margin-left: 20px;
-					@media screen and (max-width: $screen-md) {
+					@media screen and (max-witrh: $screen-md) {
 						margin-left: 0px;
 					}
 					a {
@@ -606,7 +606,7 @@ h1, h2, h3, h4, h5, h6, figure {
 				a {
 					background: rgba(255,255,255,.3);
 					box-shadow: none;
-					width: 12px;
+					witrh: 12px;
 					height: 12px;
 					cursor: pointer;
 					&.flex-active {
@@ -625,15 +625,15 @@ h1, h2, h3, h4, h5, h6, figure {
 			display: table;
 			opacity: 0;
 			min-height: 700px;
-			width: 100%;
+			witrh: 100%;
 			.fh5co-property-brief-inner {
 				display: table-cell;
 				vertical-align: middle;
 				min-height: 700px;
-				width: 100%;
+				witrh: 100%;
 				
 				.fh5co-box {
-					width: 40%;	
+					witrh: 40%;	
 					background: rgba(255,255,255,.9);
 					padding: 30px;
 					color: $brand-white;
@@ -644,8 +644,8 @@ h1, h2, h3, h4, h5, h6, figure {
 					-ms-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
 					-o-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
 					box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
-					@media screen and (max-width: $screen-sm) {
-						width: 100%;
+					@media screen and (max-witrh: $screen-sm) {
+						witrh: 100%;
 					}
 					.fh5co-property-specification {
 						padding: 10px 0;
@@ -706,14 +706,14 @@ h1, h2, h3, h4, h5, h6, figure {
 									border: solid transparent;
 									content: " ";
 									height: 0;
-									width: 0;
+									witrh: 0;
 									position: absolute;
 									pointer-events: none;
 								}
 								&:after {
 									border-color: rgba(136, 183, 213, 0);
 									border-right-color: $brand-secondary;
-									border-width: 13px;
+									border-witrh: 13px;
 									margin-top: -13px;
 								}
 								&:hover, &:active, &:focus {
@@ -743,7 +743,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #best-deal, .fh5co-services {
 	// background: #eff6fc;
 	padding: 7em 0;
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 
@@ -754,7 +754,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			display: block;
 			margin-bottom: 30px;
 			img {
-				max-width: inherit;
+				max-witrh: inherit;
 				height: 90px;
 				margin: 0 auto;
 			}
@@ -793,7 +793,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		background: rgba(255,255,255,.9);
 		position: absolute;
 		z-index: 1001;
-		width: 40%;
+		witrh: 40%;
 		right: 10%;
 		top: 50%;
 		-webkit-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
@@ -801,31 +801,31 @@ h1, h2, h3, h4, h5, h6, figure {
 		-ms-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
 		-o-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
 		box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
-		@media screen and (max-width: $screen-md) {
+		@media screen and (max-witrh: $screen-md) {
 			position: relative;
 			right: auto;
 			bottom: auto;
-			width: 100%;
+			witrh: 100%;
 			margin-top: auto!important;
 		}
-		@media screen and (max-width: $screen-xs) {
+		@media screen and (max-witrh: $screen-xs) {
 			position: relative;
 			right: auto;
 			bottom: auto;
-			width: 100%;
+			witrh: 100%;
 			padding: 15px;
 		}
 	}
 	h2 {
 		font-size: 50px;
 		margin-bottom: 20px;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			font-size: 32px;
 		}
 	}
 	p {
 		font-size: 20px;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			font-size: 16px;
 		}
 		&:last-child {
@@ -837,7 +837,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-property {
 	background: $brand-white;
 	text-align: left;
-	width: 100%;
+	witrh: 100%;
 	float: left;
 	-webkit-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
 	-moz-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.5);
@@ -912,7 +912,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-agents {
 	background: $brand-white;
 	padding: 7em 0;
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 
@@ -928,7 +928,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			padding: 20px 20px 20px 20px;
 			background: $brand-white;
 			float: left;
-			width: 100%;
+			witrh: 100%;
 			@include border-radius(0px);
 			-webkit-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.3);
 			-moz-box-shadow: 4px 11px 35px -14px rgba(0,0,0,.3);
@@ -971,7 +971,7 @@ h1, h2, h3, h4, h5, h6, figure {
 		box-shadow: 4px 11px 35px -14px rgba(0,0,0,.3);
 		figure {
 			img {
-				width: 150px;
+				witrh: 150px;
 				height: 150px;
 				@include border-radius(50%);
 			}	
@@ -992,7 +992,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-team,
 .fh5co-contact {
 	padding: 7em 0;
-	@media screen and (max-width :$screen-sm) {
+	@media screen and (max-witrh :$screen-sm) {
 		padding: 3em 0 10px 0;
 	}
 }
@@ -1023,11 +1023,11 @@ h1, h2, h3, h4, h5, h6, figure {
 
 #map {
 	height: 500px;
-	width: 100%;
-	@media screen and (max-width: $screen-sm) {
+	witrh: 100%;
+	@media screen and (max-witrh: $screen-sm) {
 		height: 400px;
 	}
-	@media screen and (max-width: $screen-xs) {
+	@media screen and (max-witrh: $screen-xs) {
 		height: 200px;
 	}
 }
@@ -1056,14 +1056,14 @@ h1, h2, h3, h4, h5, h6, figure {
 	background: #ecf1f5;
 	padding: 7em 0 0px 0;
 	float: left;
-	width: 100%;
-	@media screen and (max-width :$screen-sm) {
+	witrh: 100%;
+	@media screen and (max-witrh :$screen-sm) {
 		padding: 3em 0 10px 0;
 	}
 	.v-align {
 		display: table;
 		height: 100%;
-		width: 100%;
+		witrh: 100%;
 		background: rgba(0,0,0,.1);
 		position: relative;
 		@include transition(.5s);
@@ -1086,21 +1086,21 @@ h1, h2, h3, h4, h5, h6, figure {
 
 	.col-1, .col-2 {
 		float: left;
-		width: 50%;
-		@media screen and (max-width: $screen-sm) {
-			width: 100%;	
+		witrh: 50%;
+		@media screen and (max-witrh: $screen-sm) {
+			witrh: 100%;	
 		}
 	}
 	.col-1 {
 		border-right: 5px solid #ecf1f5;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			border-right: none;
 		}
 		&.reverse {
 			float: right!important;
 			border-right: none!important;
 			border-left: 5px solid #ecf1f5;
-			@media screen and (max-width: $screen-sm) {
+			@media screen and (max-witrh: $screen-sm) {
 				border-left: none;
 			}
 		}
@@ -1108,20 +1108,20 @@ h1, h2, h3, h4, h5, h6, figure {
 	.col-2 {
 		float: right;
 		border-left: 5px solid #ecf1f5;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			border-left: none;
 		}
 		&.reverse {
 			float: left!important;
 			border-left: none!important;
 			border-right: 5px solid #ecf1f5;
-			@media screen and (max-width: $screen-sm) {
+			@media screen and (max-witrh: $screen-sm) {
 				border-right: none;
 			}
 		}
 	}
 	.item-grid {
-		width: 100%;
+		witrh: 100%;
 		float: left;
 		background-size: cover;
 		background-position: center center;
@@ -1159,13 +1159,13 @@ h1, h2, h3, h4, h5, h6, figure {
 		.icon {
 			display: block;
 			background: $brand-white;
-			width: 90px;
+			witrh: 90px;
 			height: 90px;
 			margin: 0 auto 30px auto;
 			padding-top: 19px;
 			@include border-radius(50%);
 			img {
-				max-width: inherit;
+				max-witrh: inherit;
 				height: 50px;
 				margin: 0 auto;
 			}
@@ -1174,14 +1174,14 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.one, .three {
 		height: 450px;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			height: 450px;
 		}
 	}
 	
 	.two {
 		height: 900px;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			height: 450px;
 			border-top: 5px solid #ecf1f5;
 			background-position: top left;
@@ -1193,7 +1193,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 	.three {
 		border-top: 5px solid #ecf1f5;
-		@media screen and (max-width: $screen-sm) {
+		@media screen and (max-witrh: $screen-sm) {
 			border-bottom: 5px solid #ecf1f5;
 		}
 	}
@@ -1205,7 +1205,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	position: relative;
 	clear: both;
 	background: lighten($brand-black, 97%);
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 	.fh5co-entry {
@@ -1215,7 +1215,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			margin-bottom: 0px;
 			@include transition(.5s);
 			img {
-				max-width: 100%;
+				max-witrh: 100%;
 			}
 		}
 
@@ -1269,7 +1269,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	background-attachment: fixed;
 	padding: 7em 0;
 	position: relative;
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 	.overlay {
@@ -1299,7 +1299,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .fh5co-page-title {
 	padding: 10em 0 5em 0!important;
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 6em 0 1em 0!important;
 	}
 	h1 {
@@ -1316,10 +1316,10 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-footer {
 	padding: 7em 0;
 	float: left;
-	width: 100%;
+	witrh: 100%;
 	position: relative;
 	background: lighten($brand-black, 20%);
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 	h2, h3, h4 {
@@ -1381,7 +1381,7 @@ h1, h2, h3, h4, h5, h6, figure {
 			border-radius: 50%!important;
 
 			height: 50px;
-			width: 50px;
+			witrh: 50px;
 			line-height: 50px;
 			display: table-cell;
 			vertical-align: middle;
@@ -1422,7 +1422,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	span {
 		display: block;
 	}
-	@media screen and (max-width: $screen-xs) {
+	@media screen and (max-witrh: $screen-xs) {
 		text-align: left!important;
 		span {
 			display: inline;
@@ -1458,10 +1458,10 @@ h1, h2, h3, h4, h5, h6, figure {
 	position: fixed;
 	z-index: 1;
 	top: 0;
-	width: 275px;
+	witrh: 275px;
 	background: rgba(0,0,0,1);
 	padding: 30px;
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		display: block;
 	}
 	ul {
@@ -1537,7 +1537,7 @@ h1, h2, h3, h4, h5, h6, figure {
   i {
   	position: relative;
 	  @include inline-block;
-	  width: 30px;
+	  witrh: 30px;
 	  height: 2px;
 	  color: $brand-white;
 	  font:bold 14px/.4 Helvetica;
@@ -1547,7 +1547,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	  transition: all .2s ease-out;
 		 &::before, &::after {
 	  	  content:'';
-		  width: 30px;
+		  witrh: 30px;
 		  height: 2px;
 		  background: $brand-white;
 		  position: absolute;
@@ -1609,7 +1609,7 @@ h1, h2, h3, h4, h5, h6, figure {
 	margin: 0 auto;
 	display: none;
 	cursor: pointer;
-  	@media screen and (max-width: $screen-sm) {
+  	@media screen and (max-witrh: $screen-sm) {
   		display: block;
   		top: 20px;
   	}
@@ -1621,7 +1621,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-pricing{
 	padding: 7em 0;
 	background: lighten($brand-black, 97%);
-	@media screen and (max-width: $screen-sm) {
+	@media screen and (max-witrh: $screen-sm) {
 		padding: 3em 0;
 	}
 	.pricing{

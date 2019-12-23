@@ -20,14 +20,6 @@
 
 
 
-            @using (Html.BeginForm())
-            {
-
-                <div class="input-group no-border">
-
-                    <b style="color:white">Title:</b> @Html.TextBox("SearchString", null, new { @class = "bigfield" })<input type="submit" value="Tìm kiếm" placeholder="Search.." />
-                </div>
-            }
 
 
             <br />
@@ -92,6 +84,7 @@
 
                                 <td>
                                     <img src="@Url.Action("../Content/Images", new { id = item.Avatar})" width="" height="100" />
+                                    @*<img src="@Url.Action("Image",new {id = item.Avatar})" width="" height="100" />*@
                                     @Html.DisplayFor(modelItem => item.Avatar)
                                 </td>
 

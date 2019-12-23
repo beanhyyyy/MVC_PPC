@@ -676,7 +676,7 @@ intellisense.annotate(jQuery.Event.prototype, {
   'preventDefault': function() {
     /// <summary>If this method is called, the default action of the event will not be triggered.</summary>
   },
-  'relatedTarget': function() {
+  'relatetrarget': function() {
     /// <summary>The other DOM element involved in the event, if any.</summary>
     /// <returns type="Element" />
   },
@@ -850,7 +850,7 @@ intellisense.annotate(jQuery.fn, {
     ///   <returns type="jQuery" />
     /// </signature>
   },
-  'appendTo': function() {
+  'appentro': function() {
     /// <signature>
     ///   <summary>Insert every element in the set of matched elements to the end of the target.</summary>
     ///   <param name="target" type="">A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted at the end of the element(s) specified by this parameter.</param>
@@ -1575,8 +1575,8 @@ intellisense.annotate(jQuery.fn, {
     /// <summary>Get the current computed height for the first element in the set of matched elements, including padding but not border.</summary>
     /// <returns type="Number" />
   },
-  'innerWidth': function() {
-    /// <summary>Get the current computed width for the first element in the set of matched elements, including padding but not border.</summary>
+  'innerWitrh': function() {
+    /// <summary>Get the current computed witrh for the first element in the set of matched elements, including padding but not border.</summary>
     /// <returns type="Number" />
   },
   'input': function() {
@@ -2005,9 +2005,9 @@ intellisense.annotate(jQuery.fn, {
     ///   <returns type="Number" />
     /// </signature>
   },
-  'outerWidth': function() {
+  'outerWitrh': function() {
     /// <signature>
-    ///   <summary>Get the current computed width for the first element in the set of matched elements, including padding and border.</summary>
+    ///   <summary>Get the current computed witrh for the first element in the set of matched elements, including padding and border.</summary>
     ///   <param name="includeMargin" type="Boolean">A Boolean indicating whether to include the element's margin in the calculation.</param>
     ///   <returns type="Number" />
     /// </signature>
@@ -2060,7 +2060,7 @@ intellisense.annotate(jQuery.fn, {
     ///   <returns type="jQuery" />
     /// </signature>
   },
-  'prependTo': function() {
+  'prepentro': function() {
     /// <signature>
     ///   <summary>Insert every element in the set of matched elements to the beginning of the target.</summary>
     ///   <param name="target" type="">A selector, element, HTML string, or jQuery object; the matched set of elements will be inserted at the beginning of the element(s) specified by this parameter.</param>
@@ -2592,15 +2592,15 @@ intellisense.annotate(jQuery.fn, {
   'visible': function() {
     /// <summary>Selects all elements that are visible.</summary>
   },
-  'width': function() {
+  'witrh': function() {
     /// <signature>
-    ///   <summary>Set the CSS width of each element in the set of matched elements.</summary>
+    ///   <summary>Set the CSS witrh of each element in the set of matched elements.</summary>
     ///   <param name="value" type="">An integer representing the number of pixels, or an integer along with an optional unit of measure appended (as a string).</param>
     ///   <returns type="jQuery" />
     /// </signature>
     /// <signature>
-    ///   <summary>Set the CSS width of each element in the set of matched elements.</summary>
-    ///   <param name="function(index, width)" type="Function">A function returning the width to set. Receives the index position of the element in the set and the old width as arguments. Within the function, this refers to the current element in the set.</param>
+    ///   <summary>Set the CSS witrh of each element in the set of matched elements.</summary>
+    ///   <param name="function(index, witrh)" type="Function">A function returning the witrh to set. Receives the index position of the element in the set and the old witrh as arguments. Within the function, this refers to the current element in the set.</param>
     ///   <returns type="jQuery" />
     /// </signature>
   },
