@@ -292,7 +292,7 @@ namespace MVC_PPC.Controllers
             {
                 return View("Error");
             }
-            var userFactors = await UserManager.GetValitrwoFactorProvidersAsync(userId);
+            var userFactors = await UserManager.GetValidTwoFactorProvidersAsync(userId);
             var factorOptions = userFactors.Select(purpose => new SelectListItem { Text = purpose, Value = purpose }).ToList();
             return View(new SendCodeViewModel { Providers = factorOptions, ReturnUrl = returnUrl, RememberMe = rememberMe });
         }
@@ -310,7 +310,7 @@ namespace MVC_PPC.Controllers
             }
 
             // Generate the token and send it
-            if (!await SignInManager.SentrwoFactorCodeAsync(model.SelectedProvider))
+            if (!await SignInManager.SendTwoFactorCodeAsync(model.SelectedProvider))
             {
                 return View("Error");
             }
