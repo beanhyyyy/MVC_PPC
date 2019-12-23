@@ -1,115 +1,103 @@
-﻿@model MVC_PPC.Models.Full_Contract
+﻿@model MVC_PPC.Models.Installment_Contract
+
 
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<br />
+<br />
+<br />
+<br />
 
 <div>
-    <h4>Full_Contract</h4>
+    <h2> Details Installment Contract</h2>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Full_Contract_Code)
-        </dt>
+    <table class="table-responsive table-bordered table-condensed table-hover" align="center">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Installment_Contract_Code)</th>
+            <th>@Html.DisplayNameFor(model => model.Customer_Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Year_Of_Birth)</th>
+            <th>@Html.DisplayNameFor(model => model.SSN)</th>
+            <th>@Html.DisplayNameFor(model => model.Customer_Address)</th>
+            <th>@Html.DisplayNameFor(model => model.Mobile)</th>
+            <th>@Html.DisplayNameFor(model => model.Date_Of_Contract)</th>
+            <th>@Html.DisplayNameFor(model => model.Installment_Payment_Method)</th>
+            <th>@Html.DisplayNameFor(model => model.Payment_Period)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th>@Html.DisplayNameFor(model => model.Deposit)</th>
+            <th>@Html.DisplayNameFor(model => model.Loan_Amount)</th>
+            <th>@Html.DisplayNameFor(model => model.Taken)</th>
+            <th>@Html.DisplayNameFor(model => model.Remain)</th>
+            <th>@Html.DisplayNameFor(model => model.Status)</th>
+            <th>@Html.DisplayNameFor(model => model.Property.Property_Code)</th>
+        </tr>
 
-        <dd>
-            @Html.DisplayFor(model => model.Full_Contract_Code)
-        </dd>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Installment_Contract_Code)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Customer_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Year_Of_Birth)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.SSN)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Customer_Address)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Date_Of_Contract)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Installment_Payment_Method)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Payment_Period)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Deposit)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Loan_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Taken)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Remain)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Property.Property_Code)
+            </td>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Customer_Name)
-        </dt>
+        </tr>
 
-        <dd>
-            @Html.DisplayFor(model => model.Customer_Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Year_Of_Birth)
-        </dt>
+    </table>
 
-        <dd>
-            @Html.DisplayFor(model => model.Year_Of_Birth)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.SSN)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.SSN)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Customer_Address)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Customer_Address)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Mobile)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Mobile)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Date_Of_Contract)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Date_Of_Contract)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Deposit)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Deposit)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Remain)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Remain)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Status)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Status)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Property.Property_Code)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Property.Property_Code)
-        </dd>
-
-    </dl>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+<div class="form-group" style="padding-top: 30px">
+    <div class="col-md-offset-1 col-md-10">
+        <button class="btn btn-default" onclick="javascript:return ShowMessage()">@Html.ActionLink("Edit", "Edit", new { id = Model.ID })</button>
+
+        <button class="btn btn-default"> @Html.ActionLink("Back to List", "Index")</button>
+    </div>
+
+
+</div>
+
