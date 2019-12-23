@@ -1,4 +1,4 @@
-﻿@model IEnumerable<MVC_PPC.Models.Installment_Contract>
+﻿@model IEnumerable<MVC_PPC.Models.Full_Contract>
 
 @{
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
@@ -6,11 +6,10 @@
 
 <body @*style="background: url('')"*@>
     <div class="col-md-12">
-        <h1>DCMM</h1>
 
         <div class="card card-plain">
             <div class="card-header card-header-primary">
-                <h4 class="card-title mt-0"> List of installment contract</h4>
+                <h4 class="card-title mt-0"> List of full contract</h4>
             </div>
             <br />
             <br />
@@ -26,7 +25,7 @@
                     <table class="table table-hover">
                         <tr>
                             <th>
-                                @Html.DisplayNameFor(model => model.Installment_Contract_Code)
+                                @Html.DisplayNameFor(model => model.Full_Contract_Code)
                             </th>
                             <th>
                                 @Html.DisplayNameFor(model => model.Customer_Name)
@@ -44,20 +43,6 @@
                                 @Html.DisplayNameFor(model => model.Mobile)
                             </th>
                             <th>
-                                @Html.DisplayNameFor(model => model.Date_Of_Contract)
-                            </th>
-
-                            <th>
-                                @Html.DisplayNameFor(model => model.Payment_Period)
-                            </th>
-                            <th>
-                                @Html.DisplayNameFor(model => model.Price)
-                            </th>
-
-                            <th>
-                                @Html.DisplayNameFor(model => model.Status)
-                            </th>
-                            <th>
                                 @Html.DisplayNameFor(model => model.Property.Property_Code)
                             </th>
                             <th></th>
@@ -67,7 +52,7 @@
                         {
                             <tr>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Installment_Contract_Code)
+                                    @Html.DisplayFor(modelItem => item.Full_Contract_Code)
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Customer_Name)
@@ -83,20 +68,6 @@
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Mobile)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Date_Of_Contract)
-                                </td>
-
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Payment_Period)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Price)
-                                </td>
-
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Status)
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Property.Property_Code)
