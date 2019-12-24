@@ -5,7 +5,7 @@
 
 .carousel-inner {
   position: relative;
-  witrh: 100%;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -13,7 +13,7 @@
   position: relative;
   display: none;
   align-items: center;
-  witrh: 100%;
+  width: 100%;
   @include transition($carousel-transition);
   backface-visibility: hidden;
   perspective: 1000px;
@@ -73,7 +73,7 @@
   display: flex; // 1. allow flex styles
   align-items: center; // 2. vertically center contents
   justify-content: center; // 3. horizontally center contents
-  witrh: $carousel-control-witrh;
+  width: $carousel-control-width;
   color: $carousel-control-color;
   text-align: center;
   opacity: $carousel-control-opacity;
@@ -105,8 +105,8 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   display: inline-block;
-  witrh: $carousel-control-icon-witrh;
-  height: $carousel-control-icon-witrh;
+  width: $carousel-control-icon-width;
+  height: $carousel-control-icon-width;
   background: transparent no-repeat center center;
   background-size: 100% 100%;
 }
@@ -132,15 +132,15 @@
   display: flex;
   justify-content: center;
   padding-left: 0; // override <ol> default
-  // Use the .carousel-control's witrh as margin so we don't overlay those
-  margin-right: $carousel-control-witrh;
-  margin-left: $carousel-control-witrh;
+  // Use the .carousel-control's width as margin so we don't overlay those
+  margin-right: $carousel-control-width;
+  margin-left: $carousel-control-width;
   list-style: none;
 
   li {
     position: relative;
     flex: 0 1 auto;
-    witrh: $carousel-indicator-witrh;
+    width: $carousel-indicator-width;
     height: $carousel-indicator-height;
     margin-right: $carousel-indicator-spacer;
     margin-left: $carousel-indicator-spacer;
@@ -153,7 +153,7 @@
       top: -10px;
       left: 0;
       display: inline-block;
-      witrh: 100%;
+      width: 100%;
       height: 10px;
       content: "";
     }
@@ -162,7 +162,7 @@
       bottom: -10px;
       left: 0;
       display: inline-block;
-      witrh: 100%;
+      width: 100%;
       height: 10px;
       content: "";
     }
@@ -180,9 +180,9 @@
 
 .carousel-caption {
   position: absolute;
-  right: ((100% - $carousel-caption-witrh) / 2);
+  right: ((100% - $carousel-caption-width) / 2);
   bottom: 20px;
-  left: ((100% - $carousel-caption-witrh) / 2);
+  left: ((100% - $carousel-caption-width) / 2);
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;

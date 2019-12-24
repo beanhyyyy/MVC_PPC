@@ -32,7 +32,7 @@
     position: fixed;
     top: 115px;
     right: 0;
-    witrh: 64px;
+    width: 64px;
     background: rgba(0,0,0,.3);
     z-index: 1031;
     border-radius: 8px 0 0 8px;
@@ -42,12 +42,12 @@
     color: #FFFFFF;
     padding: 10px;
     border-radius: 0 0 6px 6px;
-    witrh: auto;
+    width: auto;
 }
 .fixed-plugin .dropdown-menu{
     right: 80px;
     left: auto;
-    witrh: 290px;
+    width: 290px;
     border-radius: 0.1875rem;
     padding: 0 10px;
 }
@@ -72,7 +72,7 @@
 
 .fixed-plugin img{
     border-radius: 0;
-    witrh: 100%;
+    width: 100%;
     height: 100px;
     margin: 0 auto;
 }
@@ -90,7 +90,7 @@
     height: 23px;
     margin-right: 5px;
     position: relative;
-    witrh: 23px;
+    width: 23px;
     padding: 8px;
 }
 .fixed-plugin .badge.active,
@@ -133,14 +133,14 @@
 .fixed-plugin .dropdown-menu li{
     display: block;
     padding: 18px 2px;
-    witrh: 25%;
+    width: 25%;
     float: left;
 }
 
 .fixed-plugin li.adjustments-line,
 .fixed-plugin li.header-title,
 .fixed-plugin li.button-container{
-    witrh: 100%;
+    width: 100%;
     height: 50px;
     min-height: inherit;
 }
@@ -237,7 +237,7 @@
       max-height: 100px;
       overflow: hidden;
       padding: 0;
-      min-witrh: 25%;
+      min-width: 25%;
 }
 
 .fixed-plugin .dropdown-menu > li > a.switch-trigger:hover,
@@ -259,9 +259,9 @@
 }
 
 .fixed-plugin .btn-social{
-    witrh: 50%;
+    width: 50%;
     display: block;
-    witrh: 48%;
+    width: 48%;
     float: left;
     font-weight: 600;
 }
@@ -296,7 +296,7 @@
     display: inline-block;
     position: absolute;
     top: 65px;
-    witrh: 16px;
+    width: 16px;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);

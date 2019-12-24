@@ -12,7 +12,7 @@
 
 // Navbar
 //
-// Provide a static navbar from which we expand to create full-witrh, fixed, and
+// Provide a static navbar from which we expand to create full-width, fixed, and
 // other navbar variations.
 
 .navbar {
@@ -110,7 +110,7 @@
   font-size: $navbar-toggler-font-size;
   line-height: 1;
   background-color: transparent; // remove default button style
-  border: $border-witrh solid transparent; // remove default button style
+  border: $border-width solid transparent; // remove default button style
   @include border-radius($navbar-toggler-border-radius);
 
   @include hover-focus {
@@ -127,7 +127,7 @@
 // or image file as needed.
 .navbar-toggler-icon {
   display: inline-block;
-  witrh: 1.5em;
+  width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
   content: "";

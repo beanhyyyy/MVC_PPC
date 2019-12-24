@@ -17,7 +17,7 @@
   .arrow {
     position: absolute;
     display: block;
-    witrh: $tooltip-arrow-witrh;
+    width: $tooltip-arrow-width;
     height: $tooltip-arrow-height;
 
     &::before {
@@ -37,7 +37,7 @@
 
     &::before {
       top: 0;
-      border-witrh: $tooltip-arrow-height ($tooltip-arrow-witrh / 2) 0;
+      border-width: $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
       border-top-color: $tooltip-arrow-color;
     }
   }
@@ -48,12 +48,12 @@
 
   .arrow {
     left: 0;
-    witrh: $tooltip-arrow-height;
-    height: $tooltip-arrow-witrh;
+    width: $tooltip-arrow-height;
+    height: $tooltip-arrow-width;
 
     &::before {
       right: 0;
-      border-witrh: ($tooltip-arrow-witrh / 2) $tooltip-arrow-height ($tooltip-arrow-witrh / 2) 0;
+      border-width: ($tooltip-arrow-width / 2) $tooltip-arrow-height ($tooltip-arrow-width / 2) 0;
       border-right-color: $tooltip-arrow-color;
     }
   }
@@ -67,7 +67,7 @@
 
     &::before {
       bottom: 0;
-      border-witrh: 0 ($tooltip-arrow-witrh / 2) $tooltip-arrow-height;
+      border-width: 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
       border-bottom-color: $tooltip-arrow-color;
     }
   }
@@ -78,12 +78,12 @@
 
   .arrow {
     right: 0;
-    witrh: $tooltip-arrow-height;
-    height: $tooltip-arrow-witrh;
+    width: $tooltip-arrow-height;
+    height: $tooltip-arrow-width;
 
     &::before {
       left: 0;
-      border-witrh: ($tooltip-arrow-witrh / 2) 0 ($tooltip-arrow-witrh / 2) $tooltip-arrow-height;
+      border-width: ($tooltip-arrow-width / 2) 0 ($tooltip-arrow-width / 2) $tooltip-arrow-height;
       border-left-color: $tooltip-arrow-color;
     }
   }
@@ -106,7 +106,7 @@
 
 // Wrapper for the tooltip content
 .tooltip-inner {
-  max-witrh: $tooltip-max-witrh;
+  max-width: $tooltip-max-width;
   padding: $tooltip-padding-y $tooltip-padding-x;
   color: $tooltip-color;
   text-align: center;

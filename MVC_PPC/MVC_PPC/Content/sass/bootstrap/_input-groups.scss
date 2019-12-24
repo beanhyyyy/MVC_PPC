@@ -27,7 +27,7 @@
     // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855
     float: left;
 
-    witrh: 100%;
+    width: 100%;
     margin-bottom: 0;
   }
 }
@@ -63,7 +63,7 @@
 // Addon and addon wrapper for buttons
 .input-group-addon,
 .input-group-btn {
-  witrh: 1%;
+  width: 1%;
   white-space: nowrap;
   vertical-align: middle; // Match the inputs
 }

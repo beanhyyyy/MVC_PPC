@@ -11,7 +11,7 @@
     // Hide original checkbox
     input[type=checkbox] {
       opacity: 0;
-      witrh: 0;
+      width: 0;
       height: 0;
     }
 
@@ -24,7 +24,7 @@
     input[type=checkbox][disabled] + .toggle {
       content: "";
       display: inline-block;
-      witrh: 30px;
+      width: 30px;
       height: 15px;
       background-color: rgba(80, 80, 80, 0.7);
       border-radius: 15px;
@@ -36,7 +36,7 @@
     .toggle:after {
       content: "";
       display: inline-block;
-      witrh: 20px;
+      width: 20px;
       height: 20px;
       background-color: #FFFFFF;
       border-radius: 20px;

@@ -129,12 +129,12 @@
 }
 // Carets in other button sizes
 .btn-lg .caret {
-  border-witrh: $caret-witrh-large $caret-witrh-large 0;
-  border-bottom-witrh: 0;
+  border-width: $caret-width-large $caret-width-large 0;
+  border-bottom-width: 0;
 }
 // Upside down carets for .dropup
 .dropup .btn-lg .caret {
-  border-witrh: 0 $caret-witrh-large $caret-witrh-large;
+  border-width: 0 $caret-width-large $caret-width-large;
 }
 
 
@@ -147,8 +147,8 @@
   > .btn-group > .btn {
     display: block;
     float: none;
-    witrh: 100%;
-    max-witrh: 100%;
+    width: 100%;
+    max-width: 100%;
   }
 
   // Clear floats so dropdown menus can be properly placed
@@ -200,17 +200,17 @@
 
 .btn-group-justified {
   display: table;
-  witrh: 100%;
+  width: 100%;
   table-layout: fixed;
   border-collapse: separate;
   > .btn,
   > .btn-group {
     float: none;
     display: table-cell;
-    witrh: 1%;
+    width: 1%;
   }
   > .btn-group .btn {
-    witrh: 100%;
+    width: 100%;
   }
 
   > .btn-group .dropdown-menu {

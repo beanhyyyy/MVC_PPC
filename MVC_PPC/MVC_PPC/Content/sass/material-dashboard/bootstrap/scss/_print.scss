@@ -51,7 +51,7 @@
     }
     pre,
     blockquote {
-      border: $border-witrh solid #999;   // Bootstrap custom code; using `$border-witrh` instead of 1px
+      border: $border-width solid #999;   // Bootstrap custom code; using `$border-width` instead of 1px
       page-break-inside: avoid;
     }
 
@@ -83,17 +83,17 @@
 
     // Bootstrap specific changes start
 
-    // Specify a size and min-witrh to make printing closer across browsers.
+    // Specify a size and min-width to make printing closer across browsers.
     // We don't set margin here because it breaks `size` in Chrome. We also
     // don't use `!important` on `size` as it breaks in Chrome.
     @page {
       size: $print-page-size;
     }
     body {
-      min-witrh: $print-body-min-witrh !important;
+      min-width: $print-body-min-width !important;
     }
     .container {
-      min-witrh: $print-body-min-witrh !important;
+      min-width: $print-body-min-width !important;
     }
 
     // Bootstrap components
@@ -101,7 +101,7 @@
       display: none;
     }
     .badge {
-      border: $border-witrh solid #000;
+      border: $border-width solid #000;
     }
 
     .table {

@@ -15,7 +15,7 @@
         position: absolute;
         margin: 0;
         z-index: -1;
-        witrh: 0;
+        width: 0;
         height: 0;
         overflow: hidden;
         left: 0;
@@ -37,7 +37,7 @@
             content: "";
             background-color: rgba(0,0,0,.84);
             height: $mdb-checkbox-size;
-            witrh: $mdb-checkbox-size;
+            width: $mdb-checkbox-size;
             border-radius: 100%;
             z-index: 1;
             opacity: 0;
@@ -49,7 +49,7 @@
         .check {
             position: relative;
             display: inline-block;
-            witrh: $mdb-checkbox-size;
+            width: $mdb-checkbox-size;
             height: $mdb-checkbox-size;
             border: 1px solid $mdb-checkbox-border-color;
             overflow: hidden;
@@ -63,7 +63,7 @@
                 display: block;
                 margin-top: -3px;
                 margin-left: 7px;
-                witrh: 0;
+                width: 0;
                 color: $white-color;
                 height: 0;
                 box-shadow:

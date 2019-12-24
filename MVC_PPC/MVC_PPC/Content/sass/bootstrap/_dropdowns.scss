@@ -6,14 +6,14 @@
 // Dropdown arrow/caret
 .caret {
   display: inline-block;
-  witrh: 0;
+  width: 0;
   height: 0;
   margin-left: 2px;
   vertical-align: middle;
-  border-top:   $caret-witrh-base dashed;
-  border-top:   $caret-witrh-base solid \9; // IE8
-  border-right: $caret-witrh-base solid transparent;
-  border-left:  $caret-witrh-base solid transparent;
+  border-top:   $caret-width-base dashed;
+  border-top:   $caret-width-base solid \9; // IE8
+  border-right: $caret-width-base solid transparent;
+  border-left:  $caret-width-base solid transparent;
 }
 
 // The dropdown wrapper (div)
@@ -35,7 +35,7 @@
   z-index: $zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
-  min-witrh: 160px;
+  min-width: 160px;
   padding: 5px 0;
   margin: 2px 0 0; // override default ul
   list-style: none;
@@ -185,8 +185,8 @@
   // Reverse the caret
   .caret {
     border-top: 0;
-    border-bottom: $caret-witrh-base dashed;
-    border-bottom: $caret-witrh-base solid \9; // IE8
+    border-bottom: $caret-width-base dashed;
+    border-bottom: $caret-width-base solid \9; // IE8
     content: "";
   }
   // Different positioning for bottom up menu
@@ -202,7 +202,7 @@
 //
 // Reiterate per navbar.less and the modified component alignment there.
 
-@media (min-witrh: $grid-float-breakpoint) {
+@media (min-width: $grid-float-breakpoint) {
   .navbar-right {
     .dropdown-menu {
       right: 0; left: auto;

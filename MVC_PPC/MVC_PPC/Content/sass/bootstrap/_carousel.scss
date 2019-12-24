@@ -11,7 +11,7 @@
 .carousel-inner {
   position: relative;
   overflow: hidden;
-  witrh: 100%;
+  width: 100%;
 
   > .item {
     display: none;
@@ -64,7 +64,7 @@
   > .prev {
     position: absolute;
     top: 0;
-    witrh: 100%;
+    width: 100%;
   }
 
   > .next {
@@ -95,7 +95,7 @@
   top: 0;
   left: 0;
   bottom: 0;
-  witrh: $carousel-control-witrh;
+  width: $carousel-control-width;
   @include opaCity_Name($carousel-control-opaCity_Name);
   font-size: $carousel-control-font-size;
   color: $carousel-control-color;
@@ -146,7 +146,7 @@
   }
   .icon-prev,
   .icon-next {
-    witrh:  20px;
+    width:  20px;
     height: 20px;
     line-height: 1;
     font-family: serif;
@@ -175,7 +175,7 @@
   bottom: 10px;
   left: 50%;
   z-index: 15;
-  witrh: 60%;
+  width: 60%;
   margin-left: -30%;
   padding-left: 0;
   list-style: none;
@@ -183,7 +183,7 @@
 
   li {
     display: inline-block;
-    witrh:  10px;
+    width:  10px;
     height: 10px;
     margin: 1px;
     text-indent: -999px;
@@ -205,7 +205,7 @@
   }
   .active {
     margin: 0;
-    witrh:  12px;
+    width:  12px;
     height: 12px;
     background-color: $carousel-indicator-active-bg;
   }
@@ -232,7 +232,7 @@
 
 
 // Scale up controls for tablets and up
-@media screen and (min-witrh: $screen-sm-min) {
+@media screen and (min-width: $screen-sm-min) {
 
   // Scale up the controls a smidge
   .carousel-control {
@@ -240,7 +240,7 @@
     .glyphicon-chevron-right,
     .icon-prev,
     .icon-next {
-      witrh: 30px;
+      width: 30px;
       height: 30px;
       margin-top: -15px;
       font-size: 30px;

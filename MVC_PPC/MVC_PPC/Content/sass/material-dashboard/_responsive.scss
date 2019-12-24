@@ -1,4 +1,4 @@
-@media all and (max-witrh: 991px) {
+@media all and (max-width: 991px) {
     [class*="navbar-expand-"] > .container,
     [class*="navbar-expand-"] > .container-fluid{
         padding-left: 15px;
@@ -10,10 +10,10 @@
     }
 
     .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn) {
-      witrh: -webkit-fill-available !important;
+      width: -webkit-fill-available !important;
 
       .dropdown-menu.show {
-        min-witrh: auto;
+        min-width: auto;
         left: auto;
       }
     }
@@ -24,7 +24,7 @@
     }
 
     .carousel .card .card-body{
-      max-witrh: 340px;
+      max-width: 340px;
       margin: 0 auto;
       min-height: 400px;
     }
@@ -34,7 +34,7 @@
       display: block;
       top: 0px;
       height: 100vh;
-      witrh: 230px;
+      width: 230px;
       right: 0;
       margin-right: 0 !important;
       z-index: 1032;
@@ -55,7 +55,7 @@
           top: 0;
           left: 0;
           height: 100%;
-          witrh: 100%;
+          width: 100%;
           position: absolute;
           background-color: $white-color;
           display: block;
@@ -84,7 +84,7 @@
               }
 
               &:after{
-                  witrh: calc(100% - 30px);
+                  width: calc(100% - 30px);
                   content: "";
                   display: block;
                   height: 1px;
@@ -113,7 +113,7 @@
 
     .navbar{
         .navbar-translate{
-            witrh: 100%;
+            width: 100%;
             position: relative;
             display: flex;
             -ms-flex-pack: justify !important;
@@ -147,7 +147,7 @@
             -webkit-box-shadow: none;
             box-shadow: none;
             transform: none !important;
-            witrh: auto;
+            width: auto;
             margin-bottom: 15px;
             padding-top: 0;
             height: 300px;
@@ -167,7 +167,7 @@
 
     #bodyClick {
         height: 100%;
-        witrh: 100%;
+        width: 100%;
         position: fixed;
         opacity: 0;
         top: 0;
@@ -198,7 +198,7 @@
     }
 }
 
-@media all and (min-witrh: 991px) {
+@media all and (min-width: 991px) {
     .navbar .navbar-nav{
         align-items: center;
 
@@ -211,19 +211,19 @@
     }
 
     .navbar-form {
-      min-witrh: 250px;
+      min-width: 250px;
 
       .bmd-form-group {
-        witrh: 100%;
+        width: 100%;
       }
     }
 }
 
-@media screen and (max-witrh: 991px) {
+@media screen and (max-width: 991px) {
   .presentation-page {
     .section-components {
       .components-macbook {
-        max-witrh: 850px !important;
+        max-width: 850px !important;
         max-height: 480px !important;
         margin-top: 12vh;
         left: -12px;
@@ -249,22 +249,22 @@
     }
     .section-content {
       .area-img {
-        max-witrh: 130px;
+        max-width: 130px;
         max-height: 170px;
       }
       .info-img {
-        max-witrh: 170px;
+        max-width: 170px;
         max-height: 120px;
       }
     }
   }
 }
 
-@media screen and (max-witrh: 767px) {
+@media screen and (max-width: 767px) {
   .presentation-page {
     .section-components {
       .components-macbook {
-        max-witrh: 350px !important;
+        max-width: 350px !important;
         max-height: 250px !important;
         margin-top: 12vh;
         left: -12px;
@@ -306,13 +306,13 @@
   .index-page{
     .cd-section{
       .tim-typo .tim-note{
-        witrh: 60px;
+        width: 60px;
       }
     }
   }
 }
 
-@media screen and (max-witrh: 400px){
+@media screen and (max-width: 400px){
   .cd-vertical-nav{
     display: none !important;
   }
@@ -320,7 +320,7 @@
 
 /*          Changes for small display      */
 
-@media (max-witrh: 991px){
+@media (max-width: 991px){
 
     .form-group{
         textarea{
@@ -370,18 +370,18 @@
 
         > li > .timeline-panel{
             float: right;
-            witrh: 86%;
+            width: 86%;
 
             &:before{
-                border-left-witrh: 0;
-                border-right-witrh: 15px;
+                border-left-width: 0;
+                border-right-width: 15px;
                 left: -15px;
                 right: auto;
             }
 
             &:after{
-                border-left-witrh: 0;
-                border-right-witrh: 14px;
+                border-left-width: 0;
+                border-right-width: 14px;
                 left: -14px;
                 right: auto;
             }
@@ -393,7 +393,7 @@
             display: none;
             position: static !important;
             background-color: transparent;
-            witrh: auto;
+            width: auto;
             float: none;
             box-shadow: none;
 
@@ -468,7 +468,7 @@
             .open .dropdown-menu {
                 position: static;
                 float: none;
-                witrh: auto;
+                width: auto;
                 margin-top: 0;
                 background-color: transparent;
                 border: 0;
@@ -479,7 +479,7 @@
     }
 
     .main-panel{
-        witrh: 100%;
+        width: 100%;
     }
     .navbar-transparent{
         padding-top: 15px;
@@ -560,7 +560,7 @@
         display: block;
         top: 0;
         height: 100vh;
-        witrh: 260px;
+        width: 260px;
         right: 0;
         left: auto;
         z-index: 1032;
@@ -577,13 +577,13 @@
         > ul {
             position: relative;
             z-index: 4;
-            witrh: 100%;
+            width: 100%;
         }
         &::before{
             top: 0;
             left: 0;
             height: 100%;
-            witrh: 100%;
+            width: 100%;
             position: absolute;
             background-color: #282828;
             display: block;
@@ -605,7 +605,7 @@
         }
 
         .table-responsive {
-            witrh: 100%;
+            width: 100%;
             margin-bottom: 15px;
             overflow-x: scroll;
             overflow-y: hidden;
@@ -620,7 +620,7 @@
             .form-control{
                 font-size: 1.7em;
                 height: 37px;
-                witrh: 78%;
+                width: 78%;
             }
         }
     }
@@ -635,7 +635,7 @@
 
     .close-layer{
         height: 100%;
-        witrh: 100%;
+        width: 100%;
         position: absolute;
         opacity: 0;
         top: 0;
@@ -656,7 +656,7 @@
           display: block;
           position: relative;
           background: #555 !important;
-          witrh: 24px;
+          width: 24px;
           height: 2px;
           border-radius: 1px;
           margin: 0 auto;
@@ -665,7 +665,7 @@
     .navbar-header .navbar-toggler {
         padding: 15px;
         margin-top: 4px;
-        witrh: 40px;
+        width: 40px;
         height: 40px;
     }
     .bar1,
@@ -791,7 +791,7 @@
     }
     #bodyClick {
         height: 100%;
-        witrh: 100%;
+        width: 100%;
         position: fixed;
         opacity: 0;
         top: 0;
@@ -825,13 +825,13 @@
     }
 
     .media-post .author{
-        witrh: 20%;
+        width: 20%;
         float: none !important;
         display: block;
         margin: 0 auto 10px;
     }
     .media-post .media-body{
-        witrh: 100%;
+        width: 100%;
     }
 
     .navbar-collapse.collapse{
@@ -855,7 +855,7 @@
 }
 
 
-@media (min-witrh: 992px) {
+@media (min-width: 992px) {
   .main-panel {
     .navbar .navbar-collapse {
       .navbar-nav .nav-item .nav-link p {

@@ -14,15 +14,15 @@
 }
 
 .media-body {
-  witrh: 10000px;
+  width: 10000px;
 }
 
 .media-object {
   display: block;
 
-  // Fix collapse in webkit from max-witrh: 100% and display: table-cell.
+  // Fix collapse in webkit from max-width: 100% and display: table-cell.
   &.img-thumbnail {
-    max-witrh: none;
+    max-width: none;
   }
 }
 

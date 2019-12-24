@@ -30,14 +30,14 @@
 //
 
 .nav-tabs {
-  border-bottom: $nav-tabs-border-witrh solid $nav-tabs-border-color;
+  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
-    margin-bottom: -$nav-tabs-border-witrh;
+    margin-bottom: -$nav-tabs-border-width;
   }
 
   .nav-link {
-    border: $nav-tabs-border-witrh solid transparent;
+    border: $nav-tabs-border-width solid transparent;
     @include border-top-radius($nav-tabs-border-radius);
 
     @include hover-focus {
@@ -60,7 +60,7 @@
 
   .dropdown-menu {
     // Make dropdown border overlap tab border
-    margin-top: -$nav-tabs-border-witrh;
+    margin-top: -$nav-tabs-border-width;
     // Remove the top rounded corners here since there is a hard edge above the menu
     @include border-top-radius(0);
   }

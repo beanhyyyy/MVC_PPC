@@ -6,11 +6,11 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-witrh: 0;
+  min-width: 0;
   word-wrap: break-word;
   background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-witrh solid $card-border-color;
+  border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
 
   > hr {
@@ -69,7 +69,7 @@
   padding: $card-spacer-y $card-spacer-x;
   margin-bottom: 0; // Removes the default margin-bottom of <hN>
   background-color: $card-cap-bg;
-  border-bottom: $card-border-witrh solid $card-border-color;
+  border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
     @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
@@ -85,7 +85,7 @@
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;
   background-color: $card-cap-bg;
-  border-top: $card-border-witrh solid $card-border-color;
+  border-top: $card-border-width solid $card-border-color;
 
   &:last-child {
     @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
@@ -120,18 +120,18 @@
 }
 
 .card-img {
-  witrh: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-radius($card-inner-border-radius);
 }
 
 // Card image caps
 .card-img-top {
-  witrh: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-top-radius($card-inner-border-radius);
 }
 
 .card-img-bottom {
-  witrh: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
+  width: 100%; // Required because we use flexbox and this inherently applies align-self: stretch
   @include border-bottom-radius($card-inner-border-radius);
 }
 
@@ -264,7 +264,7 @@
 
     .card {
       display: inline-block; // Don't let them vertically span multiple columns
-      witrh: 100%; // Don't let their witrh change
+      width: 100%; // Don't let their width change
     }
   }
 }

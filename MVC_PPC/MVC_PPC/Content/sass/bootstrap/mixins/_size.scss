@@ -1,7 +1,7 @@
 // Sizing shortcuts
 
-@mixin size($witrh, $height) {
-  witrh: $witrh;
+@mixin size($width, $height) {
+  width: $width;
   height: $height;
 }
 

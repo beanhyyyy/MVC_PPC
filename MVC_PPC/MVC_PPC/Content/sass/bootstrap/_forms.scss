@@ -11,15 +11,15 @@ fieldset {
   padding: 0;
   margin: 0;
   border: 0;
-  // Chrome and Firefox set a `min-witrh: min-content;` on fieldsets,
+  // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
   // so we reset that to ensure it behaves more like a standard block element.
   // See https://github.com/twbs/bootstrap/issues/12359.
-  min-witrh: 0;
+  min-width: 0;
 }
 
 legend {
   display: block;
-  witrh: 100%;
+  width: 100%;
   padding: 0;
   margin-bottom: $line-height-computed;
   font-size: ($font-size-base * 1.5);
@@ -31,7 +31,7 @@ legend {
 
 label {
   display: inline-block;
-  max-witrh: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -63,7 +63,7 @@ input[type="file"] {
 // Make range inputs behave like textual form controls
 input[type="range"] {
   display: block;
-  witrh: 100%;
+  width: 100%;
 }
 
 // Make multiple select elements height not fixed
@@ -113,7 +113,7 @@ output {
 
 .form-control {
   display: block;
-  witrh: 100%;
+  width: 100%;
   height: $input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   padding: $padding-base-vertical $padding-base-horizontal;
   font-size: $font-size-base;
@@ -395,7 +395,7 @@ input[type="checkbox"] {
   right: 0;
   z-index: 2; // Ensure icon is above input groups
   display: block;
-  witrh: $input-height-base;
+  width: $input-height-base;
   height: $input-height-base;
   line-height: $input-height-base;
   text-align: center;
@@ -404,14 +404,14 @@ input[type="checkbox"] {
 .input-lg + .form-control-feedback,
 .input-group-lg + .form-control-feedback,
 .form-group-lg .form-control + .form-control-feedback {
-  witrh: $input-height-large;
+  width: $input-height-large;
   height: $input-height-large;
   line-height: $input-height-large;
 }
 .input-sm + .form-control-feedback,
 .input-group-sm + .form-control-feedback,
 .form-group-sm .form-control + .form-control-feedback {
-  witrh: $input-height-small;
+  width: $input-height-small;
   height: $input-height-small;
   line-height: $input-height-small;
 }
@@ -467,7 +467,7 @@ input[type="checkbox"] {
 @mixin form-inline {
 
   // Kick in the inline
-  @media (min-witrh: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     // Inline-block all the things for "inline"
     .form-group {
       display: inline-block;
@@ -478,7 +478,7 @@ input[type="checkbox"] {
     // In navbar-form, allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
-      witrh: auto; // Prevent labels from stacking above inputs in `.form-group`
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
     }
 
@@ -494,13 +494,13 @@ input[type="checkbox"] {
       .input-group-addon,
       .input-group-btn,
       .form-control {
-        witrh: auto;
+        width: auto;
       }
     }
 
-    // Input groups need that 100% witrh though
+    // Input groups need that 100% width though
     .input-group > .form-control {
-      witrh: 100%;
+      width: 100%;
     }
 
     .control-label {
@@ -572,7 +572,7 @@ input[type="checkbox"] {
 
   // Reset spacing and right align labels, but scope to media queries so that
   // labels on narrow viewports stack the same as a default form example.
-  @media (min-witrh: $screen-sm-min) {
+  @media (min-width: $screen-sm-min) {
     .control-label {
       text-align: right;
       margin-bottom: 0;
@@ -585,7 +585,7 @@ input[type="checkbox"] {
   // Reposition the icon because it's now within a grid column and columns have
   // `position: relative;` on them. Also accounts for the grid gutter padding.
   .has-feedback .form-control-feedback {
-    right: floor(($grid-gutter-witrh / 2));
+    right: floor(($grid-gutter-width / 2));
   }
 
   // Form group sizes
@@ -593,7 +593,7 @@ input[type="checkbox"] {
   // Quick utility class for applying `.input-lg` and `.input-sm` styles to the
   // inputs and labels within a `.form-group`.
   .form-group-lg {
-    @media (min-witrh: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       .control-label {
         padding-top: (($padding-large-vertical * $line-height-large) + 1);
         font-size: $font-size-large;
@@ -601,7 +601,7 @@ input[type="checkbox"] {
     }
   }
   .form-group-sm {
-    @media (min-witrh: $screen-sm-min) {
+    @media (min-width: $screen-sm-min) {
       .control-label {
         padding-top: ($padding-small-vertical + 1);
         font-size: $font-size-small;

@@ -10,13 +10,13 @@
     bottom: 0;
     left: 0;
     z-index: 2;
-    witrh: 260px;
+    width: 260px;
     background: $white-color;
     @include shadow-big();
 
     .caret{
       display: inline-block;
-      witrh: 0;
+      width: 0;
       height: 0;
       margin-left: 2px;
       vertical-align: middle;
@@ -34,7 +34,7 @@
         position: relative;
         height: calc(100vh - 75px);
         overflow: auto;
-        witrh: 260px;
+        width: 260px;
         z-index: 4;
 
         padding-bottom: 30px;
@@ -50,7 +50,7 @@
           .input-group {
             font-size: 1.7em;
             height: 36px;
-            witrh: 78%;
+            width: 78%;
             padding-left: 17px;
           }
         }
@@ -66,7 +66,7 @@
                 i{
                     font-size: 17px;
                     line-height: 20px;
-                    witrh: 26px;
+                    width: 26px;
                 }
             }
         }
@@ -77,12 +77,12 @@
         border: 1px solid #333;
         display: block;
         height: 61px;
-        witrh: 61px;
+        width: 61px;
         float: left;
         overflow: hidden;
 
         img{
-            witrh: 60px;
+            width: 60px;
             height: 60px;
         }
     }
@@ -134,7 +134,7 @@
                 margin: 15px 0;
 
                 &:after{
-                    witrh: calc(100% - 30px);
+                    width: calc(100% - 30px);
                     content: "";
                     position: absolute;
                     height: 1px;
@@ -164,7 +164,7 @@
           float: left;
           margin-right: 15px;
           line-height: 30px;
-          witrh: 30px;
+          width: 30px;
           text-align: center;
           color: #a9afbb;
         }
@@ -187,7 +187,7 @@
         position: absolute;
         z-index: 1;
         height: 100%;
-        witrh: 100%;
+        width: 100%;
         display: block;
         top: 0;
         left: 0;
@@ -197,7 +197,7 @@
         &:after{
             position: absolute;
             z-index: 3;
-            witrh: 100%;
+            width: 100%;
             height: 100%;
             content: "";
             display: block;
@@ -219,7 +219,7 @@
             bottom: 0;
             right: 15px;
             height: 1px;
-            witrh: calc(100% - 30px);
+            width: calc(100% - 30px);
             background-color: rgba(180,180,180, .3);
 
         }
@@ -252,12 +252,12 @@
         border: 1px solid #333;
         display: block;
         height: 61px;
-        witrh: 61px;
+        width: 61px;
         float: left;
         overflow: hidden;
 
         img{
-            witrh: 60px;
+            width: 60px;
             height: 60px;
         }
     }
@@ -339,7 +339,7 @@
 .main-panel{
     position: relative;
     float: right;
-    witrh: $sidebar-witrh;
+    width: $sidebar-width;
     @include transition (0.33s, cubic-bezier(0.685, 0.0473, 0.346, 1));
 
     > .content{
@@ -378,8 +378,8 @@
 .sidebar,
 .main-panel,
 .sidebar-wrapper{
-    -webkit-transition-property: top,bottom,witrh;
-    transition-property: top,bottom, witrh;
+    -webkit-transition-property: top,bottom,width;
+    transition-property: top,bottom, width;
     -webkit-transition-duration: .2s,.2s, .35s;
     transition-duration: .2s,.2s, .35s;
     -webkit-transition-timing-function: linear,linear,ease;
@@ -394,12 +394,12 @@
     display: none !important;
 }
 
-@media (min-witrh: 991px) {
+@media (min-width: 991px) {
     .sidebar {
       .nav .nav-item {
         &.active-pro {
           position: absolute;
-          witrh: 100%;
+          width: 100%;
           bottom: 13px;
         }
       }

@@ -8,11 +8,11 @@
   position: relative;
   display: block;
   padding: $pagination-padding-y $pagination-padding-x;
-  margin-left: -$pagination-border-witrh;
+  margin-left: -$pagination-border-width;
   line-height: $pagination-line-height;
   color: $pagination-color;
   background-color: $pagination-bg;
-  border: $pagination-border-witrh solid $pagination-border-color;
+  border: $pagination-border-width solid $pagination-border-color;
 
   &:hover {
     color: $pagination-hover-color;

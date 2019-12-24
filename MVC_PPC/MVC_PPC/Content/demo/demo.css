@@ -2,7 +2,7 @@
   padding-left: 25%;
   margin-bottom: 40px;
   position: relative;
-  witrh: 100%;
+  width: 100%;
 }
 
 .tim-typo .tim-note {
@@ -15,7 +15,7 @@
   left: 0;
   margin-left: 20px;
   position: absolute;
-  witrh: 260px;
+  width: 260px;
 }
 
 /* offline-doc */
@@ -37,7 +37,7 @@
 .offline-doc .footer {
   z-index: 3 !important;
   position: absolute;
-  witrh: 100%;
+  width: 100%;
   background: transparent;
   bottom: 0;
   color: #fff;
@@ -67,12 +67,12 @@
   left: 0;
   position: absolute;
   top: 0;
-  witrh: 100%;
+  width: 100%;
   z-index: 2;
 }
 
 
-@media all and (max-witrh: 991px) {
+@media all and (max-width: 991px) {
 
   .offline-doc .navbar .navbar-collapse.collapse,
   .offline-doc .navbar .navbar-collapse.collapse.in,

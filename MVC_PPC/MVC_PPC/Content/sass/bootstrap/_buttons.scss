@@ -150,7 +150,7 @@ a.btn {
 
 .btn-block {
   display: block;
-  witrh: 100%;
+  width: 100%;
 }
 
 // Vertically space out multiple block buttons
@@ -163,6 +163,6 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   &.btn-block {
-    witrh: 100%;
+    width: 100%;
   }
 }

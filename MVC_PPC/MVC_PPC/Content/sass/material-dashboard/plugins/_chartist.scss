@@ -1,13 +1,13 @@
-@mixin ct-responsive-svg-container($witrh: 100%, $ratio: $ct-container-ratio) {
+@mixin ct-responsive-svg-container($width: 100%, $ratio: $ct-container-ratio) {
   display: block;
   position: relative;
-  witrh: $witrh;
+  width: $width;
 
   &:before {
     display: block;
     float: left;
     content: "";
-    witrh: 0;
+    width: 0;
     height: 0;
     padding-bottom: $ratio * 100%;
   }
@@ -62,9 +62,9 @@
   line-height: $ct-text-line-height;
 }
 
-@mixin ct-chart-grid($ct-grid-color: $ct-grid-color, $ct-grid-witrh: $ct-grid-witrh, $ct-grid-dasharray: $ct-grid-dasharray) {
+@mixin ct-chart-grid($ct-grid-color: $ct-grid-color, $ct-grid-width: $ct-grid-width, $ct-grid-dasharray: $ct-grid-dasharray) {
   stroke: $ct-grid-color;
-  stroke-witrh: $ct-grid-witrh;
+  stroke-width: $ct-grid-width;
 
   @if ($ct-grid-dasharray) {
     stroke-dasharray: $ct-grid-dasharray;
@@ -72,13 +72,13 @@
 }
 
 @mixin ct-chart-point($ct-point-size: $ct-point-size, $ct-point-shape: $ct-point-shape) {
-  stroke-witrh: $ct-point-size;
+  stroke-width: $ct-point-size;
   stroke-linecap: $ct-point-shape;
 }
 
-@mixin ct-chart-line($ct-line-witrh: $ct-line-witrh, $ct-line-dasharray: $ct-line-dasharray) {
+@mixin ct-chart-line($ct-line-width: $ct-line-width, $ct-line-dasharray: $ct-line-dasharray) {
   fill: none;
-  stroke-witrh: $ct-line-witrh;
+  stroke-width: $ct-line-width;
 
   @if ($ct-line-dasharray) {
     stroke-dasharray: $ct-line-dasharray;
@@ -90,14 +90,14 @@
   fill-opacity: $ct-area-opacity;
 }
 
-@mixin ct-chart-bar($ct-bar-witrh: $ct-bar-witrh) {
+@mixin ct-chart-bar($ct-bar-width: $ct-bar-width) {
   fill: none;
-  stroke-witrh: $ct-bar-witrh;
+  stroke-width: $ct-bar-width;
 }
 
-@mixin ct-chart-donut($ct-donut-witrh: $ct-donut-witrh) {
+@mixin ct-chart-donut($ct-donut-width: $ct-donut-width) {
   fill: none;
-  stroke-witrh: $ct-donut-witrh;
+  stroke-width: $ct-donut-width;
 }
 
 @mixin ct-chart-series-color($color) {
@@ -110,7 +110,7 @@
   }
 }
 
-@mixin ct-chart($ct-container-ratio: $ct-container-ratio, $ct-text-color: $ct-text-color, $ct-text-size: $ct-text-size, $ct-grid-color: $ct-grid-color, $ct-grid-witrh: $ct-grid-witrh, $ct-grid-dasharray: $ct-grid-dasharray, $ct-point-size: $ct-point-size, $ct-point-shape: $ct-point-shape, $ct-line-witrh: $ct-line-witrh, $ct-bar-witrh: $ct-bar-witrh, $ct-donut-witrh: $ct-donut-witrh, $ct-series-names: $ct-series-names, $ct-series-colors: $ct-series-colors) {
+@mixin ct-chart($ct-container-ratio: $ct-container-ratio, $ct-text-color: $ct-text-color, $ct-text-size: $ct-text-size, $ct-grid-color: $ct-grid-color, $ct-grid-width: $ct-grid-width, $ct-grid-dasharray: $ct-grid-dasharray, $ct-point-size: $ct-point-size, $ct-point-shape: $ct-point-shape, $ct-line-width: $ct-line-width, $ct-bar-width: $ct-bar-width, $ct-donut-width: $ct-donut-width, $ct-series-names: $ct-series-names, $ct-series-colors: $ct-series-colors) {
 
   .#{$ct-class-label} {
     @include ct-chart-label($ct-text-color, $ct-text-size);
@@ -188,7 +188,7 @@
   }
 
   .#{$ct-class-grid} {
-    @include ct-chart-grid($ct-grid-color, $ct-grid-witrh, $ct-grid-dasharray);
+    @include ct-chart-grid($ct-grid-color, $ct-grid-width, $ct-grid-dasharray);
   }
 
   .#{$ct-class-grid-background} {
@@ -200,7 +200,7 @@
   }
 
   .#{$ct-class-line} {
-    @include ct-chart-line($ct-line-witrh);
+    @include ct-chart-line($ct-line-width);
   }
 
   .#{$ct-class-area} {
@@ -208,11 +208,11 @@
   }
 
   .#{$ct-class-bar} {
-    @include ct-chart-bar($ct-bar-witrh);
+    @include ct-chart-bar($ct-bar-width);
   }
 
   .#{$ct-class-slice-donut} {
-    @include ct-chart-donut($ct-donut-witrh);
+    @include ct-chart-donut($ct-donut-width);
   }
 
   @if $ct-include-colored-series {
@@ -271,22 +271,22 @@
 
   .ct-bar {
     fill: none;
-    stroke-witrh: 10px;
+    stroke-width: 10px;
   }
 
   .ct-line {
     fill: none;
-    stroke-witrh: 4px;
+    stroke-width: 4px;
   }
 
   .ct-point {
-    stroke-witrh: 10px;
+    stroke-width: 10px;
     stroke-linecap: round;
   }
 
   .ct-grid {
     stroke: rgba(0, 0, 0, 0.2);
-    stroke-witrh: 1px;
+    stroke-width: 1px;
     stroke-dasharray: 2px;
   }
   .ct-label {

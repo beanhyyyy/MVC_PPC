@@ -3,29 +3,29 @@
 // --------------------------------------------------
 
 
-// Container witrhs
+// Container widths
 //
-// Set the container witrh, and override it for fixed navbars in media queries.
+// Set the container width, and override it for fixed navbars in media queries.
 
 .container {
   @include container-fixed;
 
-  @media (min-witrh: $screen-sm-min) {
-    witrh: $container-sm;
+  @media (min-width: $screen-sm-min) {
+    width: $container-sm;
   }
-  @media (min-witrh: $screen-md-min) {
-    witrh: $container-md;
+  @media (min-width: $screen-md-min) {
+    width: $container-md;
   }
-  @media (min-witrh: $screen-lg-min) {
-    witrh: $container-lg;
+  @media (min-width: $screen-lg-min) {
+    width: $container-lg;
   }
 }
 
 
 // Fluid container
 //
-// Utilizes the mixin meant for fixed witrh containers, but without any defined
-// witrh for fluid, full witrh layouts.
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
 
 .container-fluid {
   @include container-fixed;
@@ -61,7 +61,7 @@
 // Columns, offsets, pushes, and pulls for the small device range, from phones
 // to tablets.
 
-@media (min-witrh: $screen-sm-min) {
+@media (min-width: $screen-sm-min) {
   @include make-grid(sm);
 }
 
@@ -70,7 +70,7 @@
 //
 // Columns, offsets, pushes, and pulls for the desktop device range.
 
-@media (min-witrh: $screen-md-min) {
+@media (min-width: $screen-md-min) {
   @include make-grid(md);
 }
 
@@ -79,6 +79,6 @@
 //
 // Columns, offsets, pushes, and pulls for the large desktop device range.
 
-@media (min-witrh: $screen-lg-min) {
+@media (min-width: $screen-lg-min) {
   @include make-grid(lg);
 }

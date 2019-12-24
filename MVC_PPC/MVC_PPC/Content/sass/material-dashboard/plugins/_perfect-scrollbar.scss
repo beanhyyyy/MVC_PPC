@@ -25,7 +25,7 @@
     opacity: 0.9; }
     .ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
       background-color: #999;
-      witrh: 11px; }
+      width: 11px; }
   .ps-container > .ps-scrollbar-x-rail {
     display: none;
     position: absolute;
@@ -45,12 +45,12 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      -webkit-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      -o-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out;
-      -moz-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+      -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+      -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
       bottom: 2px;
       /* there must be 'bottom' for ps-scrollbar-x */
       height: 6px; }
@@ -67,7 +67,7 @@
     transition: background-color .2s linear, opacity .2s linear;
     right: 0;
     /* there must be 'right' for ps-scrollbar-y-rail */
-    witrh: 15px; }
+    width: 15px; }
     .ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
       position: absolute;
       /* please don't change 'position' */
@@ -75,17 +75,17 @@
       -webkit-border-radius: 6px;
       -moz-border-radius: 6px;
       border-radius: 6px;
-      -webkit-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
-      -o-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out;
-      -moz-transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out;
-      transition: background-color .2s linear, height .2s linear, witrh .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+      -webkit-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, -webkit-border-radius .2s ease-in-out;
+      -o-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+      -moz-transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out;
+      transition: background-color .2s linear, height .2s linear, width .2s ease-in-out, border-radius .2s ease-in-out, -webkit-border-radius .2s ease-in-out, -moz-border-radius .2s ease-in-out;
       right: 2px;
       /* there must be 'right' for ps-scrollbar-y */
-      witrh: 6px; }
+      width: 6px; }
     .ps-container > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y, .ps-container > .ps-scrollbar-y-rail:active > .ps-scrollbar-y {
-      witrh: 11px; }
+      width: 11px; }
   .ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
     background-color: #eee;
     opacity: 0.9; }
@@ -97,7 +97,7 @@
     opacity: 0.9; }
     .ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
       background-color: #999;
-      witrh: 11px; }
+      width: 11px; }
   .ps-container:hover > .ps-scrollbar-x-rail,
   .ps-container:hover > .ps-scrollbar-y-rail {
     opacity: 0.6; }

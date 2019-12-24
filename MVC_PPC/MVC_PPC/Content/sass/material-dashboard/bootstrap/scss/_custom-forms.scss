@@ -65,7 +65,7 @@
     top: (($line-height-base - $custom-control-indicator-size) / 2);
     left: 0;
     display: block;
-    witrh: $custom-control-indicator-size;
+    width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     pointer-events: none;
     content: "";
@@ -80,7 +80,7 @@
     top: (($line-height-base - $custom-control-indicator-size) / 2);
     left: 0;
     display: block;
-    witrh: $custom-control-indicator-size;
+    width: $custom-control-indicator-size;
     height: $custom-control-indicator-size;
     content: "";
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@
 
 .custom-select {
   display: inline-block;
-  witrh: 100%;
+  width: 100%;
   height: $custom-select-height;
   padding: $custom-select-padding-y ($custom-select-padding-x + $custom-select-indicator-padding) $custom-select-padding-y $custom-select-padding-x;
   line-height: $custom-select-line-height;
@@ -170,7 +170,7 @@
   vertical-align: middle;
   background: $custom-select-bg $custom-select-indicator no-repeat right $custom-select-padding-x center;
   background-size: $custom-select-bg-size;
-  border: $custom-select-border-witrh solid $custom-select-border-color;
+  border: $custom-select-border-width solid $custom-select-border-color;
   @if $enable-rounded {
     border-radius: $custom-select-border-radius;
   } @else {
@@ -234,7 +234,7 @@
 .custom-file {
   position: relative;
   display: inline-block;
-  witrh: 100%;
+  width: 100%;
   height: $custom-file-height;
   margin-bottom: 0;
 }
@@ -242,7 +242,7 @@
 .custom-file-input {
   position: relative;
   z-index: 2;
-  witrh: 100%;
+  width: 100%;
   height: $custom-file-height;
   margin: 0;
   opacity: 0;
@@ -274,7 +274,7 @@
   line-height: $custom-file-line-height;
   color: $custom-file-color;
   background-color: $custom-file-bg;
-  border: $custom-file-border-witrh solid $custom-file-border-color;
+  border: $custom-file-border-width solid $custom-file-border-color;
   @include border-radius($custom-file-border-radius);
   @include box-shadow($custom-file-box-shadow);
 
@@ -285,13 +285,13 @@
     bottom: 0;
     z-index: 3;
     display: block;
-    height: calc(#{$custom-file-height} - #{$custom-file-border-witrh} * 2);
+    height: calc(#{$custom-file-height} - #{$custom-file-border-width} * 2);
     padding: $custom-file-padding-y $custom-file-padding-x;
     line-height: $custom-file-line-height;
     color: $custom-file-button-color;
     content: "Browse";
     @include gradient-bg($custom-file-button-bg);
-    border-left: $custom-file-border-witrh solid $custom-file-border-color;
+    border-left: $custom-file-border-width solid $custom-file-border-color;
     @include border-radius(0 $custom-file-border-radius $custom-file-border-radius 0);
   }
 }

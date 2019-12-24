@@ -6,14 +6,14 @@
 
 .form-control {
   display: block;
-  witrh: 100%;
+  width: 100%;
   padding: $input-padding-y $input-padding-x;
   font-size: $font-size-base;
   line-height: $input-line-height;
   color: $input-color;
   background-color: $input-bg;
   background-clip: padding-box;
-  border: $input-border-witrh solid $input-border-color;
+  border: $input-border-width solid $input-border-color;
 
   // Note: This has no effect on <select>s in some browsers, due to the limited stylability of `<select>`s in CSS.
   @if $enable-rounded {
@@ -76,7 +76,7 @@ select.form-control {
 .form-control-file,
 .form-control-range {
   display: block;
-  witrh: 100%;
+  width: 100%;
 }
 
 
@@ -87,23 +87,23 @@ select.form-control {
 // For use with horizontal and inline forms, when you need the label (or legend)
 // text to align with the form controls.
 .col-form-label {
-  padding-top: calc(#{$input-padding-y} + #{$input-border-witrh});
-  padding-bottom: calc(#{$input-padding-y} + #{$input-border-witrh});
+  padding-top: calc(#{$input-padding-y} + #{$input-border-width});
+  padding-bottom: calc(#{$input-padding-y} + #{$input-border-width});
   margin-bottom: 0; // Override the `<label>/<legend>` default
   font-size: inherit; // Override the `<legend>` default
   line-height: $input-line-height;
 }
 
 .col-form-label-lg {
-  padding-top: calc(#{$input-padding-y-lg} + #{$input-border-witrh});
-  padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-witrh});
+  padding-top: calc(#{$input-padding-y-lg} + #{$input-border-width});
+  padding-bottom: calc(#{$input-padding-y-lg} + #{$input-border-width});
   font-size: $font-size-lg;
   line-height: $input-line-height-lg;
 }
 
 .col-form-label-sm {
-  padding-top: calc(#{$input-padding-y-sm} + #{$input-border-witrh});
-  padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-witrh});
+  padding-top: calc(#{$input-padding-y-sm} + #{$input-border-width});
+  padding-bottom: calc(#{$input-padding-y-sm} + #{$input-border-width});
   font-size: $font-size-sm;
   line-height: $input-line-height-sm;
 }
@@ -116,14 +116,14 @@ select.form-control {
 
 .form-control-plaintext {
   display: block;
-  witrh: 100%;
+  width: 100%;
   padding-top: $input-padding-y;
   padding-bottom: $input-padding-y;
   margin-bottom: 0; // match inputs if this class comes on inputs with default margins
   line-height: $input-line-height;
   background-color: transparent;
   border: solid transparent;
-  border-witrh: $input-border-witrh 0;
+  border-width: $input-border-width 0;
 
   &.form-control-sm,
   &.form-control-lg {
@@ -266,10 +266,10 @@ select.form-control-lg {
   align-items: center; // Prevent shorter elements from growing to same height as others (e.g., small buttons growing to normal sized button height)
 
   // Because we use flex, the initial sizing of checkboxes is collapsed and
-  // doesn't occupy the full-witrh (which is what we want for xs grid tier),
+  // doesn't occupy the full-width (which is what we want for xs grid tier),
   // so we force that here.
   .form-check {
-    witrh: 100%;
+    width: 100%;
   }
 
   // Kick in the inline
@@ -293,7 +293,7 @@ select.form-control-lg {
     // Allow folks to *not* use `.form-group`
     .form-control {
       display: inline-block;
-      witrh: auto; // Prevent labels from stacking above inputs in `.form-group`
+      width: auto; // Prevent labels from stacking above inputs in `.form-group`
       vertical-align: middle;
     }
 
@@ -303,7 +303,7 @@ select.form-control-lg {
     }
 
     .input-group {
-      witrh: auto;
+      width: auto;
     }
 
     // Remove default margin on radios/checkboxes that were used for stacking, and
@@ -312,7 +312,7 @@ select.form-control-lg {
       display: flex;
       align-items: center;
       justify-content: center;
-      witrh: auto;
+      width: auto;
       padding-left: 0;
     }
     .form-check-input {

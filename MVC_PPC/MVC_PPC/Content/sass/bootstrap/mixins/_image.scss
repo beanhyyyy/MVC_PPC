@@ -5,11 +5,11 @@
 
 // Responsive image
 //
-// Keep images from scaling beyond the witrh of their parents.
+// Keep images from scaling beyond the width of their parents.
 @mixin img-responsive($display: block) {
   display: $display;
-  max-witrh: 100%; // Part 1: Set a maximum relative to the parent
-  height: auto; // Part 2: Scale the height according to the witrh, otherwise you get stretching
+  max-width: 100%; // Part 1: Set a maximum relative to the parent
+  height: auto; // Part 2: Scale the height according to the width, otherwise you get stretching
 }
 
 
@@ -17,7 +17,7 @@
 //
 // Short retina mixin for setting background-image and -size. Note that the
 // spelling of `min--moz-device-pixel-ratio` is intentional.
-@mixin img-retina($file-1x, $file-2x, $witrh-1x, $height-1x) {
+@mixin img-retina($file-1x, $file-2x, $width-1x, $height-1x) {
   background-image: url(if($bootstrap-sass-asset-helper, twbs-image-path("#{$file-1x}"), "#{$file-1x}"));
 
   @media
@@ -28,6 +28,6 @@
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
     background-image: url(if($bootstrap-sass-asset-helper, twbs-image-path("#{$file-2x}"), "#{$file-2x}"));
-    background-size: $witrh-1x $height-1x;
+    background-size: $width-1x $height-1x;
   }
 }

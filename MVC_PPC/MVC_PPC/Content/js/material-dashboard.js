@@ -35,7 +35,7 @@ var searchVisible = 0;
 var transparent = true;
 
 var transparentDemo = true;
-var fixetrop = false;
+var fixedTop = false;
 
 var mobile_menu_visible = 0,
   mobile_menu_initialized = false,
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
   md.initSidebarsCheck();
 
-  window_witrh = $(window).witrh();
+  window_width = $(window).width();
 
   // check if there is an image set for the sidebar's background
   md.checkSidebarImage();
@@ -105,10 +105,10 @@ $(document).on('click', '.navbar-toggler', function() {
     var $layer = $('<div class="close-layer"></div>');
 
     if ($('body').find('.main-panel').length != 0) {
-      $layer.appentro(".main-panel");
+      $layer.appendTo(".main-panel");
 
     } else if (($('body').hasClass('off-canvas-sidebar'))) {
-      $layer.appentro(".wrapper-full-page");
+      $layer.appendTo(".wrapper-full-page");
     }
 
     setTimeout(function() {
@@ -167,7 +167,7 @@ md = {
   },
 
   initSidebarsCheck: function() {
-    if ($(window).witrh() <= 991) {
+    if ($(window).width() <= 991) {
       if ($sidebar.length != 0) {
         md.initRightMenu();
       }
@@ -176,7 +176,7 @@ md = {
 
   initDashboardPageCharts: function() {
 
-    if ($('#dailySalesChart').length != 0 || $('#completetrasksChart').length != 0 || $('#websiteViewsChart').length != 0) {
+    if ($('#dailySalesChart').length != 0 || $('#completedTasksChart').length != 0 || $('#websiteViewsChart').length != 0) {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
@@ -207,14 +207,14 @@ md = {
 
       /* ----------==========     Completed Tasks Chart initialization    ==========---------- */
 
-      dataCompletetrasksChart = {
+      dataCompletedTasksChart = {
         labels: ['12p', '3p', '6p', '9p', '12p', '3a', '6a', '9a'],
         series: [
           [230, 750, 450, 300, 280, 240, 200, 190]
         ]
       };
 
-      optionsCompletetrasksChart = {
+      optionsCompletedTasksChart = {
         lineSmooth: Chartist.Interpolation.cardinal({
           tension: 0
         }),
@@ -228,10 +228,10 @@ md = {
         }
       }
 
-      var completetrasksChart = new Chartist.Line('#completetrasksChart', dataCompletetrasksChart, optionsCompletetrasksChart);
+      var completedTasksChart = new Chartist.Line('#completedTasksChart', dataCompletedTasksChart, optionsCompletedTasksChart);
 
       // start animation for the Completed Tasks Chart - Line Chart
-      md.startAnimationForLineChart(completetrasksChart);
+      md.startAnimationForLineChart(completedTasksChart);
 
 
       /* ----------==========     Emails Subscription Chart initialization    ==========---------- */
@@ -257,7 +257,7 @@ md = {
         }
       };
       var responsiveOptions = [
-        ['screen and (max-witrh: 640px)', {
+        ['screen and (max-width: 640px)', {
           seriesBarDistance: 5,
           axisX: {
             labelInterpolationFnc: function(value) {
@@ -340,7 +340,7 @@ md = {
 
       mobile_menu_initialized = true;
     } else {
-      if ($(window).witrh() > 991) {
+      if ($(window).width() > 991) {
         // reset all the additions that we made for the sidebar wrapper only if the screen is bigger than 991px
         $sidebar_wrapper.find('.navbar-form').remove();
         $sidebar_wrapper.find('.nav-mobile-menu').remove();
@@ -352,7 +352,7 @@ md = {
 
   startAnimationForLineChart: function(chart) {
     chart.on('draw', function(data) {
-      if ((data.type === 'line' || data.type === 'area') && window.matchMedia("(min-witrh: 900px)").matches) {
+      if ((data.type === 'line' || data.type === 'area') && window.matchMedia("(min-width: 900px)").matches) {
         data.element.animate({
           d: {
             begin: 600,
@@ -382,7 +382,7 @@ md = {
   },
   startAnimationForBarChart: function(chart) {
     chart.on('draw', function(data) {
-      if (data.type === 'bar' && window.matchMedia("(min-witrh: 900px)").matches) {
+      if (data.type === 'bar' && window.matchMedia("(min-width: 900px)").matches) {
         seq2++;
         data.element.animate({
           opaCity_Name: {

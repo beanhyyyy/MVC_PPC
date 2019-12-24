@@ -97,11 +97,11 @@
   .footer {
     position: absolute;
     bottom: 0;
-    witrh: 100%;
+    width: 100%;
   }
 }
 
-@media screen and (min-witrh: 768px){
+@media screen and (min-width: 768px){
   .footer{
     .copyright {
       padding-right: 15px;

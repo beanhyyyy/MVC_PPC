@@ -80,7 +80,7 @@
   .dropdown-item,
   li > a{    // used to properly size the ripple container
     position: relative;
-    witrh: auto;
+    width: auto;
 
     display: flex;
     flex-flow: nowrap;
@@ -94,7 +94,7 @@
     margin: 0 $bmd-dropdown-margin-y;
     @include transitions($fast-transition-time, $transition-linear);
 
-    min-witrh: $bmd-menu-item-min-witrh;
+    min-width: $bmd-menu-item-min-width;
 
     padding: $dropdown-item-padding-y  $dropdown-item-padding-x;
 

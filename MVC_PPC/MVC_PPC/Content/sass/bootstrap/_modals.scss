@@ -43,7 +43,7 @@
 // Shell div to position the modal with bottom padding
 .modal-dialog {
   position: relative;
-  witrh: auto;
+  width: auto;
   margin: 10px;
 }
 
@@ -121,20 +121,20 @@
   }
 }
 
-// Measure scrollbar witrh for padding body during modal show/hide
+// Measure scrollbar width for padding body during modal show/hide
 .modal-scrollbar-measure {
   position: absolute;
   top: -9999px;
-  witrh: 50px;
+  width: 50px;
   height: 50px;
   overflow: scroll;
 }
 
 // Scale up the modal
-@media (min-witrh: $screen-sm-min) {
-  // Automatically set modal's witrh for larger viewports
+@media (min-width: $screen-sm-min) {
+  // Automatically set modal's width for larger viewports
   .modal-dialog {
-    witrh: $modal-md;
+    width: $modal-md;
     margin: 30px auto;
   }
   .modal-content {
@@ -142,9 +142,9 @@
   }
 
   // Modal sizes
-  .modal-sm { witrh: $modal-sm; }
+  .modal-sm { width: $modal-sm; }
 }
 
-@media (min-witrh: $screen-md-min) {
-  .modal-lg { witrh: $modal-lg; }
+@media (min-width: $screen-md-min) {
+  .modal-lg { width: $modal-lg; }
 }
