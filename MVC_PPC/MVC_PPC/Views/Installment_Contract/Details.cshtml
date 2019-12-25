@@ -1,0 +1,103 @@
+﻿@model MVC_PPC.Models.Installment_Contract
+
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<div>
+    <h2> Details Installment Contract</h2>
+    <hr />
+    <table class="table-responsive table-bordered table-condensed table-hover" align="center">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Installment_Contract_Code)</th>
+            <th>@Html.DisplayNameFor(model => model.Customer_Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Year_Of_Birth)</th>
+            <th>@Html.DisplayNameFor(model => model.SSN)</th>
+            <th>@Html.DisplayNameFor(model => model.Customer_Address)</th>
+            <th>@Html.DisplayNameFor(model => model.Mobile)</th>
+            <th>@Html.DisplayNameFor(model => model.Date_Of_Contract)</th>
+            <th>@Html.DisplayNameFor(model => model.Installment_Payment_Method)</th>
+            <th>@Html.DisplayNameFor(model => model.Payment_Period)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th>@Html.DisplayNameFor(model => model.Deposit)</th>
+            <th>@Html.DisplayNameFor(model => model.Loan_Amount)</th>
+            <th>@Html.DisplayNameFor(model => model.Taken)</th>
+            <th>@Html.DisplayNameFor(model => model.Remain)</th>
+            <th>@Html.DisplayNameFor(model => model.Status)</th>
+            <th>@Html.DisplayNameFor(model => model.Property.Property_Code)</th>
+        </tr>
+
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Installment_Contract_Code)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Customer_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Year_Of_Birth)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.SSN)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Customer_Address)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Mobile)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Date_Of_Contract)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Installment_Payment_Method)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Payment_Period)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Deposit)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Loan_Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Taken)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Remain)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Property.Property_Code)
+            </td>
+
+        </tr>
+
+
+    </table>
+
+</div>
+
+<div class="form-group" style="padding-top: 30px">
+    <div class="col-md-offset-1 col-md-10">
+        <button class="btn btn-default" onclick="javascript:return ShowMessage()">@Html.ActionLink("Edit", "Edit", new { id = Model.ID })</button>
+
+        <button class="btn btn-default"> @Html.ActionLink("Back to List", "Index")</button>
+    </div>
+
+
+</div>
+
